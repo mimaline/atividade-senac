@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento - Tech</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container-principal">
+        <!-- Inclui o Menu Unico Atraves de JavaScript -->
+        <div include-html-menu="menu.html"></div>
+
+        <div class="container">
+            <div class="menu content-cursos-free fundo-branco coluna">
+                <div class="linha">
+                    <a href="https://cursos.dankicode.com/" alt="Danki Code">DankiCode</a></li>
+                    <a href="https://www.rocketseat.com.br/" alt="Rokectseat">Rocketseat</a></li>
+                    <a href="https://loiane.training/" alt="Loiane Training">Loiane Training</a></li>
+                    <a href="https://www.ev.org.br/" alt="Fundacao Bradesco">Fundacao Bradesco</a></li>
+                </div>
+                <div class="linha">
+                    <a href="https://www.cursoemvideo.com/curso/" alt="Curso Em Video">Curso Video</a></li>
+                    <a href="https://escoladnc.com.br/" alt="Escola DNC">Escola DNC</a></li>
+                    <a href="https://www.sebrae-sc.com.br/" alt="Escola DNC">Sebrae</a></li>
+                    <a href="https://free-for.dev" alt="Escola DNC">FREE FOR DEV</a></li>
+                    <!-- <a href="http://excript.com/curso-de-java.html" alt="Escola DNC">VIDEOS E AULAS EM JAVA</a></li> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div include-html-rodape="rodape.html"></div>
+</body>
+
+<script src="js/script.js"></script>
+<script>
+    includeHTML("include-html-menu");
+    includeHTML("include-html-rodape");
+</script>
+
+</html>
