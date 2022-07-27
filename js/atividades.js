@@ -14,7 +14,7 @@ function loadDadosExercicios(data_exercicios) {
             Array(9, "kkauekk", "status_ok", "KAUÊ CASTANHEIRO GHAHL", data_exercicios, "ok"),
             Array(10, "mimaline", "status_ok", "YASMIM ALINE ROEDER", data_exercicios, "ok"),
             Array(11, "laarah", "status_ok", "LARISSA ALVES", data_exercicios, "ok"),
-            Array(12, "gleisonschlemper", "status_incomplete", "GLEISOM SCHLEMPER", data_exercicios, "Falta alguns exercicios..."),
+            Array(12, "gleisonschlemper", "status_ok", "GLEISOM SCHLEMPER", data_exercicios, "ok"),
             // Array(13, "vivigranza", "status_not_initialized", "-FALTOU-VIVIANE GRANZA", data_exercicios, "Exercícios não inicializados ainda, conferir!"),
             Array(14, "isaacleder", "status_ok", "ISAAC LEDER", data_exercicios, "ok"),
             //Array(15, "Akalash22", "status_ok", "ANDERSON KANENBERG", data_exercicios, "ok"),
