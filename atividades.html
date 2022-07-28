@@ -37,13 +37,26 @@
         text-align: center;
         border-top: 3px solid aliceblue;
         border-bottom: 3px solid aliceblue;
-        padding: 25px;
+        padding: 5px;
+    }
+    
+    .lista-exercicio h2 {
+        text-align: center;
     }
     
     .lista-exercicio ol li {
         color: aliceblue;
         font-size: larger;
-        padding: 15px 0;
+        padding: 15px 15px;
+    }
+    
+    .lista-exercicio ol li:last-child {
+        padding-bottom: 45px;
+    }
+    
+    .titulo-exercicio {
+        color: rgb(234, 255, 0);
+        font-size: 25px;
     }
 </style>
 
@@ -140,39 +153,39 @@
                 <h1 href="#">Exercicios 28-07-2022 - JAVA</h1>
                 <h2 style="color:white;" id="condicionais-simples">LISTA DE EXERCÍCIOS DE ALGORITMOS CONDICIONAIS </h2>
                 <ol>
-                    <li>#Exercicio 01 Suponha que para cada aluno de uma sala exista uma ficha contendo o nome e a idade de 05 alunos.Faca algoritmo que determine quantos alunos tem idade maior que 30.
+                    <li><strong class="titulo-exercicio">Exercicio 01 </strong> </br> Suponha que para cada aluno de uma sala exista uma ficha contendo o nome e a idade de 05 alunos.Faca algoritmo que determine quantos alunos tem idade maior que 30.
 
                     </li>
-                    <li>#Exercicio 02 Dado o modelo(Fiat, Ford,GM, Wolskwagen,Toyota,Honda), ano fabricação, cor e placa de 5 carros Faca um algoritmo que: a)Imprima quantos carros sao da cor verde e o percentual em relacao ao total b)Imprima quantos foram
-                        fabricados antes de 1990 percentual em relacao ao total; c)Imprima quantos sao da Fiat e o percentual em relacao ao total;
+                    <li><strong class="titulo-exercicio">Exercicio 02 </strong> </br> Dado o modelo(Fiat, Ford,GM, Wolskwagen,Toyota,Honda), ano fabricação, cor e placa de 5 carros Faca um algoritmo que: a)Imprima quantos carros sao da cor verde e o percentual
+                        em relacao ao total b)Imprima quantos foram fabricados antes de 1990 percentual em relacao ao total; c)Imprima quantos sao da Fiat e o percentual em relacao ao total;
 
                     </li>
                     <li>
-                        #Exercicio 03 Dada uma relacao de 5 nomes de carros, imprima quantos sao da cor azul Sendo que para cada carro tem-se uma ficha contendo a cor e o nome
+                        <strong class="titulo-exercicio">Exercicio 03 </strong> </br> Dada uma relacao de 5 nomes de carros, imprima quantos sao da cor azul Sendo que para cada carro tem-se uma ficha contendo a cor e o nome
 
                     </li>
-                    <li>#Exercicio 04 Dada uma serie de 5 valores, faca um algoritmo que calcule e escreva a media destes. Entretanto, se a media obtida for maior que 8, devera ser atribuido 10 para a media.
+                    <li><strong class="titulo-exercicio">Exercicio 04 </strong> </br> Dada uma serie de 5 valores, faca um algoritmo que calcule e escreva a media destes. Entretanto, se a media obtida for maior que 8, devera ser atribuido 10 para a media.
 
                     </li>
-                    <li>#Exercicio 05 Faca um algoritmo que leia o nome e as tres notas de um aluno e ao final, escreva o seu nome, sua media e se ele foi aprovado. Media de aprovacao igual a 8.
+                    <li><strong class="titulo-exercicio">Exercicio 05 </strong> </br> Faca um algoritmo que leia o nome e as tres notas de um aluno e ao final, escreva o seu nome, sua media e se ele foi aprovado. Media de aprovacao igual a 8.
 
                     </li>
-                    <li>#Exercicio 06 Faca um algoritmo que leia tres numeros digitados, e os coloque em ordem crescente.
+                    <li><strong class="titulo-exercicio">Exercicio 06 </strong> </br> Faca um algoritmo que leia tres numeros digitados, e os coloque em ordem crescente.
 
                     </li>
-                    <li>#Exercicio 07 Faca um algoritmo que leia o menor numero de tres digitados.
+                    <li><strong class="titulo-exercicio">Exercicio 07 </strong> </br> Faca um algoritmo que leia o menor numero de tres digitados.
 
                     </li>
-                    <li>#Exercicio 08 Faca um algoritmo que leia o maior numero de tres digitados.
+                    <li><strong class="titulo-exercicio">Exercicio 08 </strong> </br> Faca um algoritmo que leia o maior numero de tres digitados.
 
                     </li>
-                    <li>#Exercicio 09 Faca um algoritmo que leia o numero intermediario de tres digitados.
+                    <li><strong class="titulo-exercicio">Exercicio 09 </strong> </br> Faca um algoritmo que leia o numero intermediario de tres digitados.
 
                     </li>
-                    <li>#Exercicio 10 Faca um algoritmo que leia o maior, o menor e o intermediario de tres numeros digitados.
+                    <li><strong class="titulo-exercicio">Exercicio 10 </strong> </br> Faca um algoritmo que leia o maior, o menor e o intermediario de tres numeros digitados.
 
                     </li>
-                    <li>#Exercicio 11 Faca um algoritmo que leia um numero e apos imprima o numero lido, o seu antecessor e o seu sucessor na tela;
+                    <li><strong class="titulo-exercicio">Exercicio 11 </strong> </br> Faca um algoritmo que leia um numero e apos imprima o numero lido, o seu antecessor e o seu sucessor na tela;
                     </li>
                 </ol>
             </div>
@@ -181,61 +194,66 @@
                 <h1 href="#">Exercicios 01-08-2022 - JAVA</h1>
                 <h2 style="color:white;" id="condicionais-simples">LISTA DE EXERCÍCIOS DE ALGORITMOS CONDICIONAIS </h2>
                 <ol>
-                    <li>#Exercicio 01 Conta telefônica - Uma conta telefônica é composta dos seguintes custos: assinatura: R$ 17,90 impulsos: R$ 0,04 por impulso que exceder a 90 interurbanos chamadas p/ celular: R$0,20 por impulso Monte a fórmula para calcular
-                        o valor da conta para 254 impulsos, R$34,29 de interurbanos e 23 chamadas para celular. Elabore um programa que mostra os custos, calcula e mostra o valor total.
+                    <li><strong class="titulo-exercicio">Exercicio 01 </strong> </br> Conta telefônica - Uma conta telefônica é composta dos seguintes custos: assinatura: R$ 17,90 impulsos: R$ 0,04 por impulso que exceder a 90 interurbanos chamadas p/ celular:
+                        R$0,20 por impulso Monte a fórmula para calcular o valor da conta para 254 impulsos, R$34,29 de interurbanos e 23 chamadas para celular. Elabore um programa que mostra os custos, calcula e mostra o valor total.
                     </li>
 
-                    <li>#Exercicio 02 Uma pessoa com pouco tempo disponível lê um livro por 5 minutos a cada dia, 6 dias por semana. Monte a fórmula e escreva um programa que calcula e mostra na tela quanto tempo, em horas, a pessoa terá dedicado ao livro
-                        ao final de um ano.
+                    <li><strong class="titulo-exercicio">Exercicio 02 </strong> </br> Uma pessoa com pouco tempo disponível lê um livro por 5 minutos a cada dia, 6 dias por semana. Monte a fórmula e escreva um programa que calcula e mostra na tela quanto
+                        tempo, em horas, a pessoa terá dedicado ao livro ao final de um ano.
                     </li>
 
-                    <li>#Exercicio 03 Vou e volto diariamente a pé para o trabalho, que dista aproximadamente 800 m de minha casa. Supondo que trabalho 5 dias por semana, 45 semanas por ano, "bole" a operação matemática que deve ser efetuada para calcular
-                        quantos quilômetros, aproximadamente, terei andado ao final de um ano. Elabore um programa que faça as contas e mostre o resultado
+                    <li><strong class="titulo-exercicio">Exercicio 03 </strong> </br> Vou e volto diariamente a pé para o trabalho, que dista aproximadamente 800 m de minha casa. Supondo que trabalho 5 dias por semana, 45 semanas por ano, "bole" a operação
+                        matemática que deve ser efetuada para calcular quantos quilômetros, aproximadamente, terei andado ao final de um ano. Elabore um programa que faça as contas e mostre o resultado
                     </li>
 
-                    <li>#Exercicio 04 Faça um algoritmo para verificar se um aluno esta APROVADO ou REPROVADO, lendo 3 notas e calculando sua media que deve ser maior ou igual a 7.
+                    <li><strong class="titulo-exercicio">Exercicio 04 </strong> </br> Faça um algoritmo para verificar se um aluno esta APROVADO ou REPROVADO, lendo 3 notas e calculando sua media que deve ser maior ou igual a 7.
                     </li>
 
-                    <li>#Exercicio 05 Faça um algoritmo para verificar se uma pessoa ja pode tirar carteira de motorista considerando a idade >= 18 anos e mostre na tela uma mensagem: JA POSSO TIRAR A CARTEIRA DE MOTORISTA, se for o caso AINDA NÃO POSSO TIRAR
-                        A CARTEIRA DE MOTORISTA, se for o caso
+                    <li><strong class="titulo-exercicio">Exercicio 05 </strong> </br> Faça um algoritmo para verificar se uma pessoa ja pode tirar carteira de motorista considerando a idade >= 18 anos e mostre na tela uma mensagem: JA POSSO TIRAR A CARTEIRA
+                        DE MOTORISTA, se for o caso AINDA NÃO POSSO TIRAR A CARTEIRA DE MOTORISTA, se for o caso
 
                     </li>
-                    <li>#Exercicio 06 Faça um algoritmo para verificar se uma pessoa ja atingiu a maioridade. algoritmo deve receber como entrada apenas o ano de nascimento e considerar o ano atual para calculo e 18 anos para maioridade.
+                    <li><strong class="titulo-exercicio">Exercicio 06 </strong> </br> Faça um algoritmo para verificar se uma pessoa ja atingiu a maioridade. algoritmo deve receber como entrada apenas o ano de nascimento e considerar o ano atual para calculo
+                        e 18 anos para maioridade.
                     </li>
 
-                    <li>#Exercicio 07 Faça um algoritmo para verificar se um valor e PAR ou IMPAR;
+                    <li><strong class="titulo-exercicio">Exercicio 07 </strong> </br> Faça um algoritmo para verificar se um valor e PAR ou IMPAR;
                     </li>
 
-                    <li>#Exercicio 08 Faça um algoritmo para calcular o Indice de Massa Corporal de uma pessoa, considerando a seguinte formula: IMC = PESO / (ALTURA AO QUADRADO) Se a pessoa tiver IMC MENOR OU IGUAL A 18.5, mostre a mensagem abaixo: "Parabens!
-                        Voce esta no seu peso ideal" Senão mostre a mensagem abaixo: "Voce nao esta na faixa de peso ideal" </li>
-                    <li>#Exercicio 09 Um estudante muito metódico estava matriculado em 6 disciplinas, e dispunha de 1 hora e 40 minutos para estudar. Sua intenção era dividir o tempo disponível igualmente para as 6 disciplinas, e descansar livremente o tempo
-                        restante. Faça um programa que calcule o tempo que ele deve dedicar para cada disciplina e o tempo livre.
+                    <li><strong class="titulo-exercicio">Exercicio 08 </strong> </br> Faça um algoritmo para calcular o Indice de Massa Corporal de uma pessoa, considerando a seguinte formula: IMC = PESO / (ALTURA AO QUADRADO) Se a pessoa tiver IMC MENOR
+                        OU IGUAL A 18.5, mostre a mensagem abaixo: "Parabens! Voce esta no seu peso ideal" Senão mostre a mensagem abaixo: "Voce nao esta na faixa de peso ideal" </li>
+                    <li><strong class="titulo-exercicio">Exercicio 09 </strong> </br> Um estudante muito metódico estava matriculado em 6 disciplinas, e dispunha de 1 hora e 40 minutos para estudar. Sua intenção era dividir o tempo disponível igualmente para
+                        as 6 disciplinas, e descansar livremente o tempo restante. Faça um programa que calcule o tempo que ele deve dedicar para cada disciplina e o tempo livre.
                     </li>
-                    <li>#Exercicio 10 Determinado pais tem populacao de 5 milhoes de habitantes com taxa de natalidade de 4 % e mortalidade de 1,1 %. Um segundo pais tem 7 milhoes de pessoas e natalidade de 2% e mortalidade de 0,8% . Em quanto tempo o pais
-                        1 ira ultrapassar o pais 2? Quantos milhoes de população tera o pais 1 e o pais 2 quando isso ocorrer?
+                    <li><strong class="titulo-exercicio">Exercicio 10 </strong> </br> Determinado pais tem populacao de 5 milhoes de habitantes com taxa de natalidade de 4 % e mortalidade de 1,1 %. Um segundo pais tem 7 milhoes de pessoas e natalidade de
+                        2% e mortalidade de 0,8% . Em quanto tempo o pais 1 ira ultrapassar o pais 2? Quantos milhoes de população tera o pais 1 e o pais 2 quando isso ocorrer?
                     </li>
-                    <li>#Exercicio 11 Determine a velocidade de um automovel que percorreu uma distancia S em km, * em um intervalo de tempo T,informando em horas.
-                    </li>
-                    <li>
-                        #Exercicio 12 Faça um algoritmo que leia dois numeros inteiros (n1 e n2) * calcule a divisão de n1/n2, e informe o resto desta divisão. * Não pode ser usado funções pre-programadas(mod em VisualG e % em JAVA).
+                    <li><strong class="titulo-exercicio">Exercicio 11 </strong> </br> Determine a velocidade de um automovel que percorreu uma distancia S em km, * em um intervalo de tempo T,informando em horas.
                     </li>
                     <li>
-                        #Exercicio 13 Faça um algoritmo para ler uma temperatura em graus Celsius, e transforme * para graus Farenheidt e Kelvin. * OBS: * C = 5 (F - 32)/9; * K = C + 273;
+                        <strong class="titulo-exercicio">Exercicio 12 </strong> </br> Faça um algoritmo que leia dois numeros inteiros (n1 e n2) * calcule a divisão de n1/n2, e informe o resto desta divisão. * Não pode ser usado funções pre-programadas(mod
+                        em VisualG e % em JAVA).
                     </li>
                     <li>
-                        #Exercicio 14 Desenvolva um algoritmo para identificar se um determinado numero inteiro, * é positivo,negativo,ou nulo.
+                        <strong class="titulo-exercicio">Exercicio 13 </strong> </br> Faça um algoritmo para ler uma temperatura em graus Celsius, e transforme * para graus Farenheidt e Kelvin. * OBS: * C = 5 (F - 32)/9; * K = C + 273;
                     </li>
                     <li>
-                        #Exercicio 15 Calcule o salario do mes de um funcionario. * O funcionario ganha 3000, mais 500 reais por carro vendido, * mais 5% do valor total de cada carro vendido. * Quanto o funcionario ganha ao fim do mes?
+                        <strong class="titulo-exercicio">Exercicio 14 </strong> </br> Desenvolva um algoritmo para identificar se um determinado numero inteiro, * é positivo,negativo,ou nulo.
                     </li>
                     <li>
-                        #Exercicio 16 Fornecido os coeficientes de uma equação do 2 grau,(a,b,c - ler do teclado) * faça um algoritmo que calcule as raizes se houverem * Validar se o numero e negativo, pois não existe raiz de numero negativo!
+                        <strong class="titulo-exercicio">Exercicio 15 </strong> </br> Calcule o salario do mes de um funcionario. * O funcionario ganha 3000, mais 500 reais por carro vendido, * mais 5% do valor total de cada carro vendido. * Quanto o
+                        funcionario ganha ao fim do mes?
                     </li>
                     <li>
-                        #Exercicio 17 Suponha que voce foi ao supermercado e comprou: n Kg de café á x reais; k litros de leite á y reais; m Kg de farinha a z reais; Faça um algoritmo que imprima o ticket de compra. Primeiro produto: R$ 0,00 Segundo // : R$ 0.00
+                        <strong class="titulo-exercicio">Exercicio 16 </strong> </br> Fornecido os coeficientes de uma equação do 2 grau,(a,b,c - ler do teclado) * faça um algoritmo que calcule as raizes se houverem * Validar se o numero e negativo, pois
+                        não existe raiz de numero negativo!
                     </li>
                     <li>
-                        #Exercicio 18 Faça um algoritmo qeu calcule o volume de uma esfera. Formula = V = 4 * PI * R ao cubo
+                        <strong class="titulo-exercicio">Exercicio 17 </strong> </br> Suponha que voce foi ao supermercado e comprou: n Kg de café á x reais; k litros de leite á y reais; m Kg de farinha a z reais; Faça um algoritmo que imprima o ticket
+                        de compra. Primeiro produto: R$ 0,00 Segundo // : R$ 0.00
+                    </li>
+                    <li>
+                        <strong class="titulo-exercicio">Exercicio 18 </strong> </br> Faça um algoritmo qeu calcule o volume de uma esfera. Formula = V = 4 * PI * R ao cubo
                     </li>
                 </ol>
             </div>
