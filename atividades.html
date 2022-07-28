@@ -15,6 +15,35 @@
     footer {
         height: 50px;
     }
+    
+    ol li {
+        font-size: 20px;
+    }
+    
+    ol li:last-child {
+        padding-bottom: 50px;
+    }
+    /* css combobox */
+    
+    .lista-exercicio {
+        background-color: #004384;
+        color: black;
+    }
+    
+    .lista-exercicio h1 {
+        color: aliceblue;
+        font-size: 30px;
+        text-align: center;
+        border-top: 3px solid aliceblue;
+        border-bottom: 3px solid aliceblue;
+        padding: 25px;
+    }
+    
+    .lista-exercicio ol li {
+        color: aliceblue;
+        font-size: larger;
+        padding: 15px 0;
+    }
 </style>
 
 <body>
@@ -23,64 +52,160 @@
         <div include-html-menu="menu.html"></div>
 
         <div class="container">
-            <table class="container-table">
-                <thead>
-                    <tr>
-                        <th class="containerTable-lblTitle">Codigo</th>
-                        <th class="containerTable-lblTitle">Descrição</th>
-                        <th class="containerTable-lblTitle">Data</th>
-                    </tr>
-                </thead>
-                <tbody class="containerTable-body">
-                    <tr>
-                        <td class="containerTable-lblValue">1</td>
-                        <td class="containerTable-lblValue"><a href="#condicionais-simples">Condicionais Simples</a></td>
-                        <td class="containerTable-lblValue">21/07/2022</td>
-                    </tr>
-                </tbody>
-            </table>
-            <a href="Teste">Exercicios 21-07-2022</a>
+            <!-- <div class="menu">
+                <select>
+                    <option><a href="#" alt="" onclick="loadExercises('TODOSsss')">Exercicios</a></option>
+                    <option><a href="#" alt="" onclick="loadExercises('TODOS')">Listar Todos Exercicios</a></option>
+                    <option><a href="#" alt="" onclick="loadExercises('lista1')">Exercicio 01 - 19-07-2022 - SEQUENCIAIS - VISUALG</a></option>
+                    <option><a href="#" alt="" onclick="loadExercises('lista2')">Exercicio 02 - 21-07-2022 - CONDICIONAIS - VISUALG</a></option>
+                    <option><a href="#" alt="" onclick="loadExercises('lista3')">Exercicio 03 - 27-07-2022 - SEQUENCIAIS - JAVA</a></option>
+                    <option><a href="#" alt="" onclick="loadExercises('lista4')">Exercicio 04 - 27-07-2022 - CONDICIONAIS - 01-JAVA IF ELSE</a></option>
+                    <option><a href="#" alt="" onclick="loadExercises('lista5')">Exercicio 05 - 28-07-2022 - CONDICIONAIS - 02-JAVA IF ELSE</a></option>
+                    <option><a href="#" alt="" onclick="loadExercises('lista6')">Exercicio 06 - 01-08-2022 - CONDICIONAIS - 02-JAVA IF ELSE</a></option>
+                    <option><a href="#" alt="" onclick="loadExercises('lista7')">Exercicio 07 - 02-08-2022 - CONDICIONAIS - JAVA IF ELSE</a></option>
+                </select>
+            </div>
+             -->
+            <div class="lista-exercicio" id="lista1">
+                <h1 href="#">Exercicios 21-07-2022</h1>
 
-            <h2 style="color:white;" id="condicionais-simples">LISTA DE EXERCÍCIOS DE ALGORITMOS CONDICIONAIS </h2>
-            <ol style="color:white; padding-top: 10px; display:flex;flex-direction: column;gap:10px;">
-                <li>
-                    1) Faça um algoritmo que leia os valores A, B, C e imprima na tela se a soma de A + B é menor que C.
-                </li>
-                <li>
-                    2) Faça um algoritmo que leia o nome, o sexo("F" ou "M") e o estado civil de uma pessoa. Caso sexo seja “F” e estado civil seja “CASADA”, solicitar o tempo de casada (anos).
-                </li>
-                <li>
-                    3) Faça um algoritmo para receber um número qualquer e informar na tela se é par ou ímpar.
-                </li>
-                <li>
-                    4) Faça um algoritmo que leia dois valores inteiros A e B, e se os valores forem iguais deverá se somar os dois, caso contrário multiplique A por B. Ao final de qualquer um dos cálculos deve-se atribuir o resultado para uma variável C e mostrar seu conteúdo
-                    na tela.
-                </li>
-                <li>
-                    5) Encontrar o dobro de um número caso ele seja positivo e o seu triplo caso seja negativo, imprimindo o resultado.
-                </li>
-                <li>
-                    6) Escreva um algoritmo que lê dois valores booleanos (lógicos) e então determina se ambos são VERDADEIROS ou FALSOS.Obs:Faça uma pergunta por exemplo:Você é maior de idade?Responda SIM ou NAO. Atribua o valor conforme o caso e no final mostre a resposta:
-                    A pessoa é maior de idade, se a resposta for SIM A pessoa é menor de idade, se a resposta for NAO
-                </li>
-                <li>
-                    7) Faça um algoritmo que leia uma variável e some 5 caso seja par ou some 8 caso seja ímpar, imprimir o resultado desta operação.
-                </li>
-                <li>
-                    8) Escreva um algoritmo que leia três valores inteiros e diferentes e mostre-os em ordem decrescente.
-                </li>
-                <li>
-                    9) Escreva um algoritmo que leia três valores inteiros e diferentes e mostre-os em ordem crescente.
-                </li>
-                <li>
-                    10) Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas: ● para homens: (72.7 * h) – 58; ● para mulheres: (62.1 * h) – 44.7. Ao final do mesmo, informe se a pessoa
-                    tem peso ideal ou não.
-                </li>
-                <li>
-                    11) O IMC – Indice de Massa Corporal é um critério da Organização Mundial de Saúde para dar umaindicação sobre a condição de peso de uma pessoa adulta. A fórmula é IMC = peso / ( altura )2 Elabore um algoritmo que leia o peso e a altura de um adulto e
-                    mostre sua condição de acordo com a tabela abaixo. IMC em adultos Condição Abaixo de 18,5 Abaixo do peso Entre 18,5 e 25 Peso normal Entre 25 e 30 Acima do peso Acima de 30 obeso
-                </li>
-            </ol>
+                <h2 style="color:white;" id="condicionais-simples">LISTA DE EXERCÍCIOS DE ALGORITMOS CONDICIONAIS </h2>
+                <ol style="color:white; padding-top: 10px; display:flex;flex-direction: column;gap:10px;">
+                    <li>
+                        1) Faça um algoritmo que leia os valores A, B, C e imprima na tela se a soma de A + B é menor que C.
+                    </li>
+                    <li>
+                        2) Faça um algoritmo que leia o nome, o sexo("F" ou "M") e o estado civil de uma pessoa. Caso sexo seja “F” e estado civil seja “CASADA”, solicitar o tempo de casada (anos).
+                    </li>
+                    <li>
+                        3) Faça um algoritmo para receber um número qualquer e informar na tela se é par ou ímpar.
+                    </li>
+                    <li>
+                        4) Faça um algoritmo que leia dois valores inteiros A e B, e se os valores forem iguais deverá se somar os dois, caso contrário multiplique A por B. Ao final de qualquer um dos cálculos deve-se atribuir o resultado para uma variável C e mostrar seu conteúdo
+                        na tela.
+                    </li>
+                    <li>
+                        5) Encontrar o dobro de um número caso ele seja positivo e o seu triplo caso seja negativo, imprimindo o resultado.
+                    </li>
+                    <li>
+                        6) Escreva um algoritmo que lê dois valores booleanos (lógicos) e então determina se ambos são VERDADEIROS ou FALSOS.Obs:Faça uma pergunta por exemplo:Você é maior de idade?Responda SIM ou NAO. Atribua o valor conforme o caso e no final mostre a resposta:
+                        A pessoa é maior de idade, se a resposta for SIM A pessoa é menor de idade, se a resposta for NAO
+                    </li>
+                    <li>
+                        7) Faça um algoritmo que leia uma variável e some 5 caso seja par ou some 8 caso seja ímpar, imprimir o resultado desta operação.
+                    </li>
+                    <li>
+                        8) Escreva um algoritmo que leia três valores inteiros e diferentes e mostre-os em ordem decrescente.
+                    </li>
+                    <li>
+                        9) Escreva um algoritmo que leia três valores inteiros e diferentes e mostre-os em ordem crescente.
+                    </li>
+                    <li>
+                        10) Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas: ● para homens: (72.7 * h) – 58; ● para mulheres: (62.1 * h) – 44.7. Ao final do mesmo, informe se a pessoa
+                        tem peso ideal ou não.
+                    </li>
+                    <li>
+                        11) O IMC – Indice de Massa Corporal é um critério da Organização Mundial de Saúde para dar umaindicação sobre a condição de peso de uma pessoa adulta. A fórmula é IMC = peso / ( altura )2 Elabore um algoritmo que leia o peso e a altura de um adulto e
+                        mostre sua condição de acordo com a tabela abaixo. IMC em adultos Condição Abaixo de 18,5 Abaixo do peso Entre 18,5 e 25 Peso normal Entre 25 e 30 Acima do peso Acima de 30 obeso
+                    </li>
+                </ol>
+            </div>
+
+            <!-- <div class="lista-exercicio" id="lista2">
+                <h1 href="#">LISTA Exercicio 02</h1>
+                <strong>NADA POR AQUI ;)</strong>
+            </div>
+
+            <div class="lista-exercicio" id="lista3">
+                <h1 href="#">LISTA Exercicio 03 </h1>
+                <strong>NADA POR AQUI ;)</strong>
+            </div>
+
+            <div class="lista-exercicio" id="lista4">
+                <h1 href="#">LISTA Exercicio 04</h1>
+                <strong>NADA POR AQUI ;)</strong>
+            </div> -->
+
+            <div class="lista-exercicio" id="lista5">
+                <h1 href="#">Exercicios 28-07-2022</h1>
+                <h2 style="color:white;" id="condicionais-simples">LISTA DE EXERCÍCIOS DE ALGORITMOS CONDICIONAIS </h2>
+                <ol>
+                    <li>#Exercicio 01 Suponha que para cada aluno de uma sala exista uma ficha contendo o nome e a idade de 05 alunos.Faca algoritmo que determine quantos alunos tem idade maior que 30.
+
+                    </li>
+                    <li>#Exercicio 02 Dado o modelo(Fiat, Ford,GM, Wolskwagen,Toyota,Honda), ano fabricação, cor e placa de 5 carros Faca um algoritmo que: a)Imprima quantos carros sao da cor verde e o percentual em relacao ao total b)Imprima quantos foram
+                        fabricados antes de 1990 percentual em relacao ao total; c)Imprima quantos sao da Fiat e o percentual em relacao ao total;
+
+                    </li>
+                    <li>
+                        #Exercicio 03 Dada uma relacao de 5 nomes de carros, imprima quantos sao da cor azul Sendo que para cada carro tem-se uma ficha contendo a cor e o nome
+
+                    </li>
+                    <li>#Exercicio 04 Dada uma serie de 5 valores, faca um algoritmo que calcule e escreva a media destes. Entretanto, se a media obtida for maior que 8, devera ser atribuido 10 para a media.
+
+                    </li>
+                    <li>#Exercicio 05 Faca um algoritmo que leia o nome e as tres notas de um aluno e ao final, escreva o seu nome, sua media e se ele foi aprovado. Media de aprovacao igual a 8.
+
+                    </li>
+                    <li>#Exercicio 06 Faca um algoritmo que leia tres numeros digitados, e os coloque em ordem crescente.
+
+                    </li>
+                    <li>#Exercicio 07 Faca um algoritmo que leia o menor numero de tres digitados.
+
+                    </li>
+                    <li>#Exercicio 08 Faca um algoritmo que leia o maior numero de tres digitados.
+
+                    </li>
+                    <li>#Exercicio 09 Faca um algoritmo que leia o numero intermediario de tres digitados.
+
+                    </li>
+                    <li>#Exercicio 10 Faca um algoritmo que leia o maior, o menor e o intermediario de tres numeros digitados.
+
+                    </li>
+                    <li>#Exercicio 11 Faca um algoritmo que leia um numero e apos imprima o numero lido, o seu antecessor e o seu sucessor na tela;
+                    </li>
+                </ol>
+            </div>
+
+            <div class="lista-exercicio" id="lista6">
+                <h1 href="#">Exercicios 01-08-2022</h1>
+                <h2 style="color:white;" id="condicionais-simples">LISTA DE EXERCÍCIOS DE ALGORITMOS CONDICIONAIS </h2>
+                <ol>
+                    <li>#Exercicio 01 Conta telefônica - Uma conta telefônica é composta dos seguintes custos: assinatura: R$ 17,90 impulsos: R$ 0,04 por impulso que exceder a 90 interurbanos chamadas p/ celular: R$0,20 por impulso Monte a fórmula para calcular
+                        o valor da conta para 254 impulsos, R$34,29 de interurbanos e 23 chamadas para celular. Elabore um programa que mostra os custos, calcula e mostra o valor total.
+                    </li>
+
+                    <li>#Exercicio 02 Uma pessoa com pouco tempo disponível lê um livro por 5 minutos a cada dia, 6 dias por semana. Monte a fórmula e escreva um programa que calcula e mostra na tela quanto tempo, em horas, a pessoa terá dedicado ao livro
+                        ao final de um ano.
+                    </li>
+
+                    <li>#Exercicio 03 Vou e volto diariamente a pé para o trabalho, que dista aproximadamente 800 m de minha casa. Supondo que trabalho 5 dias por semana, 45 semanas por ano, "bole" a operação matemática que deve ser efetuada para calcular
+                        quantos quilômetros, aproximadamente, terei andado ao final de um ano. Elabore um programa que faça as contas e mostre o resultado
+                    </li>
+
+                    <li>#Exercicio 04 Faça um algoritmo para verificar se um aluno esta APROVADO ou REPROVADO, lendo 3 notas e calculando sua media que deve ser maior ou igual a 7.
+                    </li>
+
+                    <li>#Exercicio 05 Faça um algoritmo para verificar se uma pessoa ja pode tirar carteira de motorista considerando a idade >= 18 anos e mostre na tela uma mensagem: JA POSSO TIRAR A CARTEIRA DE MOTORISTA, se for o caso AINDA NÃO POSSO TIRAR
+                        A CARTEIRA DE MOTORISTA, se for o caso
+
+                    </li>
+                    <li>#Exercicio 06 Faça um algoritmo para verificar se uma pessoa ja atingiu a maioridade. algoritmo deve receber como entrada apenas o ano de nascimento e considerar o ano atual para calculo e 18 anos para maioridade.
+                    </li>
+
+                    <li>#Exercicio 07 Faça um algoritmo para verificar se um valor e PAR ou IMPAR;
+                    </li>
+
+                    <li>#Exercicio 08 Faça um algoritmo para calcular o Indice de Massa Corporal de uma pessoa, considerando a seguinte formula: IMC = PESO / (ALTURA AO QUADRADO) Se a pessoa tiver IMC MENOR OU IGUAL A 18.5, mostre a mensagem abaixo: "Parabens!
+                        Voce esta no seu peso ideal" Senão mostre a mensagem abaixo: "Voce nao esta na faixa de peso ideal" </li>
+                    <li>#Exercicio 09 Um estudante muito metódico estava matriculado em 6 disciplinas, e dispunha de 1 hora e 40 minutos para estudar. Sua intenção era dividir o tempo disponível igualmente para as 6 disciplinas, e descansar livremente o tempo
+                        restante. Faça um programa que calcule o tempo que ele deve dedicar para cada disciplina e o tempo livre.
+                    </li>
+                    <li>#Exercicio 10 Determinado pais tem populacao de 5 milhoes de habitantes com taxa de natalidade de 4 % e mortalidade de 1,1 %. Um segundo pais tem 7 milhoes de pessoas e natalidade de 2% e mortalidade de 0,8% . Em quanto tempo o pais
+                        1 ira ultrapassar o pais 2? Quantos milhoes de população tera o pais 1 e o pais 2 quando isso ocorrer?
+                    </li>
+                </ol>
+            </div>
         </div>
     </div>
 
@@ -88,8 +213,11 @@
 </body>
 
 <script src="js/script.js"></script>
+<script src="js/atividades.js"></script>
 
 <script>
+    //loadExercises("TODOS");
+
     includeHTML("include-html-menu");
     includeHTML("include-html-rodape");
 </script>

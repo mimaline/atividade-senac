@@ -154,3 +154,31 @@ function loadDataFromHTML(user, codigo, status, data_status, observacao, nome, s
 
     }
 }
+
+function loadExercises(lista) {
+
+    // inicia escondendo todos
+    //document.querySelector("#lista1").style("display", "none");
+
+    document.querySelector("#lista1").style.setProperty("display", "none", "important");
+    document.querySelector("#lista2").style.setProperty("display", "none", "important");
+    document.querySelector("#lista3").style.setProperty("display", "none", "important");
+    document.querySelector("#lista4").style.setProperty("display", "none", "important");
+    document.querySelector("#lista5").style.setProperty("display", "none", "important");
+    document.querySelector("#lista6").style.setProperty("display", "none", "important");
+
+    if (lista == "TODOS") {
+        // mostra tudo
+        lista = 1;
+        while (lista <= 6) {
+            const id_lista = "lista" + lista;
+            document.querySelector("#" + id_lista).style.setProperty("display", "block", "important");
+
+            lista++;
+        }
+    } else {
+        // mostra a lista conforme o id
+        const id_lista = lista;
+        document.querySelector("#" + id_lista).style.setProperty("display", "block", "important");
+    }
+}
