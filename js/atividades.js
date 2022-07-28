@@ -31,8 +31,8 @@ function loadDadosExercicios(data_exercicios) {
             Array(26, "guilhermeschr", "status_ok", "GUILHERME SHOROEDER", data_exercicios, "ok"),
             Array(27, "djonataserafim", "status_ok", "DJONATA SERAFIM", data_exercicios, "ok"),
             Array(28, "AlexAbreu88", "status_ok", "ALEX ABREU", data_exercicios, "ok"),
-            Array(29, "raissa10", "status_incomplete", "RAISSA CORREA", data_exercicios, "Falta alguns exercicios..."),
-            Array(30, "leticia220995", "status_incomplete", "LETICIA DOS SANTOS", data_exercicios, "Falta alguns exercicios..."),
+            Array(29, "raissa10", "status_ok", "RAISSA CORREA", data_exercicios, "ok"),
+            Array(30, "leticia220995", "status_ok", "LETICIA DOS SANTOS", data_exercicios, "ok"),
         );
     } else if (data_exercicios == "2022-07-25") {
         return new Array(
