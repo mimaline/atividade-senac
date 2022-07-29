@@ -334,8 +334,6 @@ function loadDataFromHTML(user, codigo, status, data_status, observacao, nome, s
 function loadExercises(lista) {
 
     // inicia escondendo todos
-    //document.querySelector("#lista1").style("display", "none");
-
     document.querySelector("#lista1").style.setProperty("display", "none", "important");
     document.querySelector("#lista2").style.setProperty("display", "none", "important");
     document.querySelector("#lista3").style.setProperty("display", "none", "important");
