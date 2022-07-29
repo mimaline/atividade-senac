@@ -229,7 +229,7 @@ function loadDadosExercicios(data_exercicios) {
 
 function getListaDesistentes() {
     //      GITHUB INVALIDO
-    return [16];
+    return [16, 8];
 }
 
 function loadUsers(status) {
