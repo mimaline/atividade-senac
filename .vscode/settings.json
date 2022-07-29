@@ -2,7 +2,7 @@
   "emmet.syntaxProfiles" : {
     "javascript" : "jsx"
   },
-  "editor.formatOnSave" : false,
+  "editor.formatOnSave" : true,
   "workbench.startupEditor" : "newUntitledFile",
   "editor.fontSize" : 16,
   "javascript.suggest.autoImports" : true,
