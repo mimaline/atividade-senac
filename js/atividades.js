@@ -1,40 +1,3 @@
-function loadListaVazia(data_exercicios) {
-    return new Array(
-        // codigo - login - status - nome - data - observacao
-        Array(1, "Gelvazio", "status_not_verified", "Gelvazio Camargo", data_exercicios, ""),
-        Array(2, "waywl", "status_not_verified", "SARA ZANIZ", data_exercicios, ""),
-        Array(3, "JanesDays", "status_not_verified", "RICK JANES MATOS DIAS", data_exercicios, ""),
-        Array(4, "dhbr1991", "status_not_verified", "DOUGLAS REGIS HAMES", data_exercicios, ""),
-        Array(5, "brenowesleymartins", "status_not_verified", "BRENO WESLEY MARTINS", data_exercicios, ""),
-        Array(6, "andreiwelter2", "status_not_verified", "ANDREI WELTER", data_exercicios, ""),
-        Array(7, "BrunooEduu", "status_not_verified", "BRUNO EDUARDO", data_exercicios, ""),
-        Array(8, "Sn0wye", "status_not_verified", "GABRIEL TRZIMAJEWSKI", data_exercicios, ""),
-        Array(9, "kkauekk", "status_not_verified", "KAUÊ CASTANHEIRO GHAHL", data_exercicios, ""),
-        Array(10, "mimaline", "status_not_verified", "YASMIM ALINE ROEDER", data_exercicios, ""),
-        Array(11, "laarah", "status_not_verified", "LARISSA ALVES", data_exercicios, ""),
-        Array(12, "gleisonschlemper", "status_not_verified", "GLEISOM SCHLEMPER", data_exercicios, ""),
-        Array(13, "vivigranza", "status_not_verified", "VIVIANE GRANZA", data_exercicios, ""),
-        Array(14, "isaacleder", "status_not_verified", "ISAAC LEDER", data_exercicios, ""),
-        Array(15, "Akalash22", "status_not_verified", "ANDERSON KANENBERG", data_exercicios, ""),
-        Array(16, "kauadasilvasilveira14@gmail.com", "status_not_verified", "KAUÃ DA SILVA", data_exercicios, ""),
-        Array(17, "BrunoSasse05", "status_not_verified", "BRUNO SASSE", data_exercicios, ""),
-        Array(18, "EduuCorrea", "status_not_verified", "EDUARDO CORREA", data_exercicios, ""),
-        Array(19, "amandafeller", "status_not_verified", "AMANDA FELLER", data_exercicios, ""),
-        Array(20, "matheusschramm", "status_not_verified", "MATHEUS SCHRAMM", data_exercicios, ""),
-        Array(21, "GuiSteinn", "status_not_verified", "GUILHERME STEIN", data_exercicios, ""),
-        Array(22, "CarluUu", "status_not_verified", "CARLOS EDUARDO MULLER", data_exercicios, ""),
-        Array(23, "FillipeGhs", "status_not_verified", "FILLIPE GABRIEL", data_exercicios, ""),
-        Array(24, "Victorvcm", "status_not_verified", "VICTOR CESAR MACHADO", data_exercicios, ""),
-        Array(25, "kauadasilva234515", "status_not_verified", "KAUÃ DA SILVA", data_exercicios, ""),
-        Array(26, "guilhermeschr", "status_not_verified", "GUILHERME SHOROEDER", data_exercicios, ""),
-        Array(27, "djonataserafim", "status_not_verified", "DJONATA SERAFIM", data_exercicios, ""),
-        Array(28, "AlexAbreu88", "status_not_verified", "ALEX ABREU", data_exercicios, ""),
-        Array(29, "raissa10", "status_not_verified", "RAISSA CORREA", data_exercicios, ""),
-        Array(30, "leticia220995", "status_not_verified", "LETICIA DOS SANTOS", data_exercicios, ""),
-        Array(31, "LeandroMelo0404", "status_not_verified", "LEANDRO MELO", data_exercicios, ""),
-    );
-}
-
 function loadDadosExercicios(data_exercicios) {
 
     if (data_exercicios == "2022-07-19") {
@@ -52,10 +15,10 @@ function loadDadosExercicios(data_exercicios) {
             Array(10, "mimaline", "status_ok", "YASMIM ALINE ROEDER", data_exercicios, "ok"),
             Array(11, "laarah", "status_ok", "LARISSA ALVES", data_exercicios, "ok"),
             Array(12, "gleisonschlemper", "status_ok", "GLEISOM SCHLEMPER", data_exercicios, "ok"),
-            Array(13, "vivigranza", "status_not_initialized", "VIVIANE GRANZA", data_exercicios, "Exercícios não inicializados ainda, conferir!"),
+            Array(13, "vivigranza", "status_not_initialized", "VIVIANE GRANZA", data_exercicios, ""),
             Array(14, "isaacleder", "status_ok", "ISAAC LEDER", data_exercicios, "ok"),
-            Array(15, "Akalash22", "status_ok", "ANDERSON KANENBERG", data_exercicios, "ok"),
-            Array(16, "kauadasilvasilveira14@gmail.com", "status_not_initialized", "KAUÃ DA SILVA", data_exercicios, "Page Not Found!Não existe o github!"),
+            Array(15, "Akalash22", "status_not_initialized", "ANDERSON KANENBERG", data_exercicios, "ok"),
+            Array(16, "kauadasilvasilveira14@gmail.com", "status_not_initialized", "KAUÃ DA SILVA", data_exercicios, ""),
             Array(17, "BrunoSasse05", "status_ok", "BRUNO SASSE", data_exercicios, " colocar em pasta por data..."),
             Array(18, "EduuCorrea", "status_ok", "EDUARDO CORREA", data_exercicios, "colocar em pasta por data..."),
             Array(19, "amandafeller", "status_ok", "AMANDA FELLER", data_exercicios, "ok"),
@@ -71,6 +34,8 @@ function loadDadosExercicios(data_exercicios) {
             Array(29, "raissa10", "status_ok", "RAISSA CORREA", data_exercicios, "ok"),
             Array(30, "leticia220995", "status_ok", "LETICIA DOS SANTOS", data_exercicios, "ok"),
             Array(31, "LeandroMelo0404", "status_not_verified", "LEANDRO MELO", data_exercicios, ""),
+            Array(32, "FALTA_GITHUB", "status_not_verified", "DOUGLAS BENTO DA SILVA", data_exercicios, ""),
+            Array(33, "FALTA_GITHUB", "status_not_verified", "BRYAN RAITZ OECHSLER", data_exercicios, ""),
         );
     } else if (data_exercicios == "2022-07-25") {
         return new Array(
@@ -90,7 +55,7 @@ function loadDadosExercicios(data_exercicios) {
             Array(13, "vivigranza", "status_ok", "VIVIANE GRANZA", data_exercicios, "Exercícios não inicializados ainda, conferir!"),
             Array(14, "isaacleder", "status_incomplete", "ISAAC LEDER", data_exercicios, "iniciados..."),
             Array(15, "Akalash22", "status_not_initialized", "ANDERSON KANENBERG", data_exercicios, "Repositorio nao encontrado..."),
-            Array(16, "kauadasilvasilveira14@gmail.com", "status_ok", "KAUÃ DA SILVA", data_exercicios, "Page Not Found!Não existe o github!"),
+            Array(16, "kauadasilvasilveira14@gmail.com", "status_ok", "KAUÃ DA SILVA", data_exercicios, "ok"),
             Array(17, "BrunoSasse05", "status_not_initialized", "BRUNO SASSE", data_exercicios, "Exercícios não inicializados ainda..."),
             Array(18, "EduuCorrea", "status_not_initialized", "EDUARDO CORREA", data_exercicios, "Exercícios não inicializados ainda..."),
             Array(19, "amandafeller", "status_not_initialized", "AMANDA FELLER", data_exercicios, "ok"),
@@ -106,6 +71,8 @@ function loadDadosExercicios(data_exercicios) {
             Array(29, "raissa10", "status_not_initialized", "RAISSA CORREA", data_exercicios, "ok"),
             Array(30, "leticia220995", "status_not_initialized", "LETICIA DOS SANTOS", data_exercicios, "ok"),
             Array(31, "LeandroMelo0404", "status_not_verified", "LEANDRO MELO", data_exercicios, ""),
+            Array(32, "FALTA_GITHUB", "status_not_verified", "DOUGLAS BENTO DA SILVA", data_exercicios, ""),
+            Array(33, "FALTA_GITHUB", "status_not_verified", "BRYAN RAITZ OECHSLER", data_exercicios, ""),
         );
     } else if (data_exercicios == "2022-07-26") {
         return new Array(
@@ -141,6 +108,8 @@ function loadDadosExercicios(data_exercicios) {
             Array(29, "raissa10", "status_not_verified", "RAISSA CORREA", data_exercicios, ""),
             Array(30, "leticia220995", "status_not_verified", "LETICIA DOS SANTOS", data_exercicios, ""),
             Array(31, "LeandroMelo0404", "status_not_verified", "LEANDRO MELO", data_exercicios, ""),
+            Array(32, "FALTA_GITHUB", "status_not_verified", "DOUGLAS BENTO DA SILVA", data_exercicios, ""),
+            Array(33, "FALTA_GITHUB", "status_not_verified", "BRYAN RAITZ OECHSLER", data_exercicios, ""),
         );
     } else if (data_exercicios == "2022-07-27") {
         return new Array(
@@ -176,6 +145,8 @@ function loadDadosExercicios(data_exercicios) {
             Array(29, "raissa10", "status_not_verified", "RAISSA CORREA", data_exercicios, ""),
             Array(30, "leticia220995", "status_not_verified", "LETICIA DOS SANTOS", data_exercicios, ""),
             Array(31, "LeandroMelo0404", "status_not_verified", "LEANDRO MELO", data_exercicios, ""),
+            Array(32, "FALTA_GITHUB", "status_not_verified", "DOUGLAS BENTO DA SILVA", data_exercicios, ""),
+            Array(33, "FALTA_GITHUB", "status_not_verified", "BRYAN RAITZ OECHSLER", data_exercicios, ""),
         );
     } else if (data_exercicios == "2022-07-28") {
         return new Array(
@@ -211,6 +182,8 @@ function loadDadosExercicios(data_exercicios) {
             Array(29, "raissa10", "status_not_verified", "RAISSA CORREA", data_exercicios, ""),
             Array(30, "leticia220995", "status_not_verified", "LETICIA DOS SANTOS", data_exercicios, ""),
             Array(31, "LeandroMelo0404", "status_not_verified", "LEANDRO MELO", data_exercicios, ""),
+            Array(32, "FALTA_GITHUB", "status_not_verified", "DOUGLAS BENTO DA SILVA", data_exercicios, ""),
+            Array(33, "FALTA_GITHUB", "status_not_verified", "BRYAN RAITZ OECHSLER", data_exercicios, ""),
         );
     } else if (data_exercicios == "2022-08-01") {
         return new Array(
@@ -246,10 +219,17 @@ function loadDadosExercicios(data_exercicios) {
             Array(29, "raissa10", "status_not_verified", "RAISSA CORREA", data_exercicios, ""),
             Array(30, "leticia220995", "status_not_verified", "LETICIA DOS SANTOS", data_exercicios, ""),
             Array(31, "LeandroMelo0404", "status_not_verified", "LEANDRO MELO", data_exercicios, ""),
+            Array(32, "FALTA_GITHUB", "status_not_verified", "DOUGLAS BENTO DA SILVA", data_exercicios, ""),
+            Array(33, "FALTA_GITHUB", "status_not_verified", "BRYAN RAITZ OECHSLER", data_exercicios, ""),
         );
     }
 
     return new Array(Array(1, "Gelvazio", "status_ok", "Gelvazio Camargo", data_exercicios, "Data Sem exercícios!"));
+}
+
+function getListaDesistentes() {
+    //      GITHUB INVALIDO
+    return [16];
 }
 
 function loadUsers(status) {
@@ -269,27 +249,42 @@ function loadUsers(status) {
 
     // Percorre as datas e lista os status por usuarios
     aListaDataExercicios.forEach(function(data_exercicios, key) {
-        // cria uma linha entre uma lista de exercicios e outra, COM A DATA
-        const status_exercise = "status_separate_exercises";
-        const nova_lista = "Exercícios:" + data_exercicios;
-        body.innerHTML += `<tr>
+
+        let aListaUsuarios = loadDadosExercicios(data_exercicios);
+
+        // Verifica se tem dados para adicionar
+        let aListaDados = loadUsersToTable(aListaUsuarios, status, adicionaDados = false);
+
+        // Adiciona a linha da data do exercicio
+        if (aListaDados.length > 0) {
+            // Adiciona a linha com a data do exercicio
+            adicionaLinhaDataExercicio(body, data_exercicios);
+
+            // Carrega os usuarios para a tabela
+            loadUsersToTable(aListaUsuarios, status, adicionaDados = true);
+        }
+    });
+}
+
+function adicionaLinhaDataExercicio(body, data_exercicios) {
+    // cria uma linha entre uma lista de exercicios e outra, COM A DATA
+    const status_exercise = "status_separate_exercises";
+    const nova_lista = "Exercícios:" + data_exercicios;
+    body.innerHTML += `<tr>
                                 <td rowspan="5" class="containerTable-lblValue ` + status_exercise + ` center">` + nova_lista + `</td>
                                 <td class="containerTable-lblValue ` + status_exercise + `">` + nova_lista + `</td>
                                 <td class="containerTable-lblValue ` + status_exercise + `">` + nova_lista + `</td>
                                 <td class="containerTable-lblValue ` + status_exercise + `">` + nova_lista + `</td>
                                 <td class="containerTable-lblValue ` + status_exercise + `">` + nova_lista + `</td>
                                 <td class="containerTable-lblValue ` + status_exercise + `">` + nova_lista + `</td>
-                            </tr>`;
+                        </tr>`;
 
-        let aListaUsuarios = loadDadosExercicios(data_exercicios);
-
-        // Carrega os usuarios para a tabela
-        loadUsersToTable(aListaUsuarios, status);
-
-    });
 }
 
-function loadUsersToTable(aListaUsuarios, status_filtro) {
+function loadUsersToTable(aListaUsuarios, status_filtro, adicionaDados) {
+    let aListaDados = new Array();
+    const aListaDesistentes = getListaDesistentes();
+
     aListaUsuarios.forEach(function(value, key) {
         const codigo = value[0];
         const user = value[1];
@@ -298,14 +293,31 @@ function loadUsersToTable(aListaUsuarios, status_filtro) {
         const data = value[4];
         const observacao = value[5];
 
-        // Carrega os usuarios para a tabela html
-        loadDataFromHTML(user, codigo, status, data, observacao, nome, status_filtro);
+        let temDados = false;
+        if ((status_filtro == "TODOS") || (status_filtro == status)) {
+            temDados = true;
+        }
+
+        let alunoDesistente = false;
+        if (aListaDesistentes.includes(codigo)) {
+            alunoDesistente = true;
+        }
+
+        if (temDados && !alunoDesistente) {
+            aListaDados.push(data);
+
+            // Carrega os usuarios para a tabela html
+            if (adicionaDados) {
+                loadDataFromHTML(user, codigo, status, data, observacao, nome, status_filtro);
+            }
+        }
     });
+
+    return aListaDados;
 }
 
 function loadDataFromHTML(user, codigo, status, data_status, observacao, nome, status_filtro) {
     let link_github = "<a class='link-user' href='https://github.com/" + user + "'>" + user + "</a>";
-    //let link_avatar = "<img src=" + data.avatar_url + " title=" + user + " alt=" + user + ">";
 
     // carrega na table os dados do github
     let details = `<td class="containerTable-lblValue">
@@ -314,18 +326,9 @@ function loadDataFromHTML(user, codigo, status, data_status, observacao, nome, s
                         <button class="tableValue-btnOption">Delete</button>
                     </td>`;
 
-    let adicionaDados = false;
-
-    if (status_filtro == "TODOS") {
-        adicionaDados = true;
-    } else if (status_filtro == status) {
-        adicionaDados = true;
-    }
-
-    if (adicionaDados) {
-        details = '';
-        let body = document.querySelector(".containerTable-body");
-        body.innerHTML += `<tr>
+    details = '';
+    let body = document.querySelector(".containerTable-body");
+    body.innerHTML += `<tr>
                                 <td class="containerTable-lblValue ` + status + ` center">` + codigo + `</td>
                                 <td class="containerTable-lblValue ` + status + `">` + link_github + `</td>
                                 <td class="containerTable-lblValue ` + status + `">` + nome + `</td>
@@ -334,8 +337,6 @@ function loadDataFromHTML(user, codigo, status, data_status, observacao, nome, s
                                 <td class="containerTable-lblValue ` + status + `">` + observacao + `</td>
                                 ` + details + `
                             </tr>`;
-
-    }
 }
 
 function loadExercises(lista) {
