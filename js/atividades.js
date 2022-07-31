@@ -239,9 +239,10 @@ function loadUsers(status) {
 
     // Lista as datas com exercicios
     const aListaDataExercicios = Array(
-        "2022-08-01",
-        "2022-07-28",
-        "2022-07-27",
+        // "2022-08-02",
+        // "2022-08-01",
+        // "2022-07-28",
+        // "2022-07-27",
         "2022-07-26",
         "2022-07-25",
         "2022-07-19",
@@ -348,6 +349,7 @@ function loadExercises(lista) {
     document.querySelector("#lista4").style.setProperty("display", "none", "important");
     document.querySelector("#lista5").style.setProperty("display", "none", "important");
     document.querySelector("#lista6").style.setProperty("display", "none", "important");
+    document.querySelector("#lista7").style.setProperty("display", "none", "important");
 
     if (lista == "TODOS") {
         // mostra tudo
