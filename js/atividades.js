@@ -6,9 +6,9 @@ function loadDadosExercicios(data_exercicios) {
             Array(1, "Gelvazio", "status_ok", "Gelvazio Camargo", data_exercicios, "ok"),
             Array(2, "waywl", "status_not_initialized", "SARA ZANIZ", data_exercicios, "Exercícios não inicializados ainda, conferir!"),
             Array(3, "JanesDays", "status_ok", "RICK JANES MATOS DIAS", data_exercicios, "precisa colocar em pasta por data..."),
-            Array(4, "dhbr1991", "status_not_initialized", "DOUGLAS REGIS HAMES", data_exercicios, "Exercícios não inicializados ainda, conferir!"),
+            Array(4, "dhbr1991", "status_ok", "DOUGLAS REGIS HAMES", data_exercicios, "Exercícios não inicializados ainda, conferir!"),
             Array(5, "brenowesleymartins", "status_not_initialized", "BRENO WESLEY MARTINS", data_exercicios, "Exercícios não inicializados ainda, conferir!"),
-            Array(6, "andreiwelter2", "status_not_initialized", "ANDREI WELTER", data_exercicios, "Exercícios não inicializados ainda, conferir!"),
+            Array(6, "andreiwelter", "status_incomplete", "ANDREI WELTER", data_exercicios, "Exercícios inicializados, falta acabar..."),
             Array(7, "BrunooEduu", "status_ok", "BRUNO EDUARDO", data_exercicios, "ok"),
             Array(8, "Sn0wye", "status_ok", "GABRIEL TRZIMAJEWSKI", data_exercicios, "Desistente"),
             Array(9, "kkauekk", "status_ok", "KAUÊ CASTANHEIRO GHAHL", data_exercicios, "ok"),
@@ -40,12 +40,12 @@ function loadDadosExercicios(data_exercicios) {
     } else if (data_exercicios == "2022-07-25") {
         return new Array(
             // codigo - login - status - nome - data - observacao
-            Array(1, "Gelvazio", "status_not_initialized", "Gelvazio Camargo", data_exercicios, "verificar..."),
+            Array(1, "Gelvazio", "status_ok", "Gelvazio Camargo", data_exercicios, "verificar..."),
             Array(2, "waywl", "status_not_initialized", "SARA ZANIZ", data_exercicios, "Exercícios não inicializados ainda..."),
             Array(3, "JanesDays", "status_not_initialized", "RICK JANES MATOS DIAS", data_exercicios, "Exercícios não inicializados ainda..."),
             Array(4, "dhbr1991", "status_not_initialized", "DOUGLAS REGIS HAMES", data_exercicios, "Exercícios não inicializados ainda..."),
             Array(5, "brenowesleymartins", "status_not_initialized", "BRENO WESLEY MARTINS", data_exercicios, "Exercícios não inicializados ainda..."),
-            Array(6, "andreiwelter2", "status_not_initialized", "ANDREI WELTER", data_exercicios, "Exercícios não inicializados ainda..."),
+            Array(6, "andreiwelter", "status_not_initialized", "ANDREI WELTER", data_exercicios, "Exercícios não inicializados ainda..."),
             Array(7, "BrunooEduu", "status_ok", "BRUNO EDUARDO", data_exercicios, "ok"),
             Array(8, "Sn0wye", "status_ok", "GABRIEL TRZIMAJEWSKI", data_exercicios, "Desistente"),
             Array(9, "kkauekk", "status_not_initialized", "KAUÊ CASTANHEIRO GHAHL", data_exercicios, "Exercícios não inicializados ainda"),
@@ -77,22 +77,22 @@ function loadDadosExercicios(data_exercicios) {
     } else if (data_exercicios == "2022-07-26") {
         return new Array(
             // codigo - login - status - nome - data - observacao
-            Array(1, "Gelvazio", "status_not_verified", "Gelvazio Camargo", data_exercicios, ""),
+            Array(1, "Gelvazio", "status_ok", "Gelvazio Camargo", data_exercicios, ""),
             Array(2, "waywl", "status_not_verified", "SARA ZANIZ", data_exercicios, ""),
-            Array(3, "JanesDays", "status_not_verified", "RICK JANES MATOS DIAS", data_exercicios, ""),
-            Array(4, "dhbr1991", "status_not_verified", "DOUGLAS REGIS HAMES", data_exercicios, ""),
-            Array(5, "brenowesleymartins", "status_not_verified", "BRENO WESLEY MARTINS", data_exercicios, ""),
-            Array(6, "andreiwelter2", "status_not_verified", "ANDREI WELTER", data_exercicios, ""),
-            Array(7, "BrunooEduu", "status_not_verified", "BRUNO EDUARDO", data_exercicios, ""),
+            Array(3, "JanesDays", "status_ok", "RICK JANES MATOS DIAS", data_exercicios, ""),
+            Array(4, "dhbr1991", "status_ok", "DOUGLAS REGIS HAMES", data_exercicios, ""),
+            Array(5, "brenowesleymartins", "status_not_initialized", "BRENO WESLEY MARTINS", data_exercicios, ""),
+            Array(6, "andreiwelter", "status_not_initialized", "ANDREI WELTER", data_exercicios, ""),
+            Array(7, "BrunooEduu", "status_ok", "BRUNO EDUARDO", data_exercicios, ""),
             Array(8, "Sn0wye", "status_not_verified", "GABRIEL TRZIMAJEWSKI", data_exercicios, ""),
-            Array(9, "kkauekk", "status_not_verified", "KAUÊ CASTANHEIRO GHAHL", data_exercicios, ""),
-            Array(10, "mimaline", "status_not_verified", "YASMIM ALINE ROEDER", data_exercicios, ""),
-            Array(11, "laarah", "status_not_verified", "LARISSA ALVES", data_exercicios, ""),
-            Array(12, "gleisonschlemper", "status_not_verified", "GLEISOM SCHLEMPER", data_exercicios, ""),
+            Array(9, "kkauekk", "status_ok", "KAUÊ CASTANHEIRO GHAHL", data_exercicios, ""),
+            Array(10, "mimaline", "status_ok", "YASMIM ALINE ROEDER", data_exercicios, ""),
+            Array(11, "laarah", "status_ok", "LARISSA ALVES", data_exercicios, ""),
+            Array(12, "gleisonschlemper", "status_not_initialized", "GLEISOM SCHLEMPER", data_exercicios, ""),
             Array(13, "vivigranza", "status_not_verified", "VIVIANE GRANZA", data_exercicios, ""),
-            Array(14, "isaacleder", "status_not_verified", "ISAAC LEDER", data_exercicios, ""),
-            Array(15, "Akalash22", "status_not_verified", "ANDERSON KANENBERG", data_exercicios, ""),
-            Array(16, "kauadasilvasilveira14@gmail.com", "status_not_verified", "KAUÃ DA SILVA", data_exercicios, ""),
+            Array(14, "isaacleder", "status_ok", "ISAAC LEDER", data_exercicios, ""),
+            Array(15, "Akalash22", "status_ok", "ANDERSON KANENBERG", data_exercicios, ""),
+            Array(16, "kauadasilvasilveira14@gmail.com", "status_ok", "KAUÃ DA SILVA", data_exercicios, ""),
             Array(17, "BrunoSasse05", "status_not_verified", "BRUNO SASSE", data_exercicios, ""),
             Array(18, "EduuCorrea", "status_not_verified", "EDUARDO CORREA", data_exercicios, ""),
             Array(19, "amandafeller", "status_not_verified", "AMANDA FELLER", data_exercicios, ""),
@@ -119,13 +119,13 @@ function loadDadosExercicios(data_exercicios) {
             Array(3, "JanesDays", "status_not_verified", "RICK JANES MATOS DIAS", data_exercicios, ""),
             Array(4, "dhbr1991", "status_not_verified", "DOUGLAS REGIS HAMES", data_exercicios, ""),
             Array(5, "brenowesleymartins", "status_not_verified", "BRENO WESLEY MARTINS", data_exercicios, ""),
-            Array(6, "andreiwelter2", "status_not_verified", "ANDREI WELTER", data_exercicios, ""),
+            Array(6, "andreiwelter", "status_not_verified", "ANDREI WELTER", data_exercicios, ""),
             Array(7, "BrunooEduu", "status_not_verified", "BRUNO EDUARDO", data_exercicios, ""),
             Array(8, "Sn0wye", "status_not_verified", "GABRIEL TRZIMAJEWSKI", data_exercicios, ""),
             Array(9, "kkauekk", "status_not_verified", "KAUÊ CASTANHEIRO GHAHL", data_exercicios, ""),
-            Array(10, "mimaline", "status_not_verified", "YASMIM ALINE ROEDER", data_exercicios, ""),
+            Array(10, "mimaline", "status_ok", "YASMIM ALINE ROEDER", data_exercicios, ""),
             Array(11, "laarah", "status_not_verified", "LARISSA ALVES", data_exercicios, ""),
-            Array(12, "gleisonschlemper", "status_not_verified", "GLEISOM SCHLEMPER", data_exercicios, ""),
+            Array(12, "gleisonschlemper", "status_ok", "GLEISOM SCHLEMPER", data_exercicios, ""),
             Array(13, "vivigranza", "status_not_verified", "VIVIANE GRANZA", data_exercicios, ""),
             Array(14, "isaacleder", "status_not_verified", "ISAAC LEDER", data_exercicios, ""),
             Array(15, "Akalash22", "status_not_verified", "ANDERSON KANENBERG", data_exercicios, ""),
@@ -156,7 +156,7 @@ function loadDadosExercicios(data_exercicios) {
             Array(3, "JanesDays", "status_not_verified", "RICK JANES MATOS DIAS", data_exercicios, ""),
             Array(4, "dhbr1991", "status_not_verified", "DOUGLAS REGIS HAMES", data_exercicios, ""),
             Array(5, "brenowesleymartins", "status_not_verified", "BRENO WESLEY MARTINS", data_exercicios, ""),
-            Array(6, "andreiwelter2", "status_not_verified", "ANDREI WELTER", data_exercicios, ""),
+            Array(6, "andreiwelter", "status_not_verified", "ANDREI WELTER", data_exercicios, ""),
             Array(7, "BrunooEduu", "status_not_verified", "BRUNO EDUARDO", data_exercicios, ""),
             Array(8, "Sn0wye", "status_not_verified", "GABRIEL TRZIMAJEWSKI", data_exercicios, ""),
             Array(9, "kkauekk", "status_not_verified", "KAUÊ CASTANHEIRO GHAHL", data_exercicios, ""),
@@ -193,7 +193,7 @@ function loadDadosExercicios(data_exercicios) {
             Array(3, "JanesDays", "status_not_verified", "RICK JANES MATOS DIAS", data_exercicios, ""),
             Array(4, "dhbr1991", "status_not_verified", "DOUGLAS REGIS HAMES", data_exercicios, ""),
             Array(5, "brenowesleymartins", "status_not_verified", "BRENO WESLEY MARTINS", data_exercicios, ""),
-            Array(6, "andreiwelter2", "status_not_verified", "ANDREI WELTER", data_exercicios, ""),
+            Array(6, "andreiwelter", "status_not_verified", "ANDREI WELTER", data_exercicios, ""),
             Array(7, "BrunooEduu", "status_not_verified", "BRUNO EDUARDO", data_exercicios, ""),
             Array(8, "Sn0wye", "status_not_verified", "GABRIEL TRZIMAJEWSKI", data_exercicios, ""),
             Array(9, "kkauekk", "status_not_verified", "KAUÊ CASTANHEIRO GHAHL", data_exercicios, ""),
@@ -229,7 +229,7 @@ function loadDadosExercicios(data_exercicios) {
 
 function getListaDesistentes() {
     //      GITHUB INVALIDO
-    return [16, 8];
+    return [2, 8, 13, 15, 16];
 }
 
 function loadUsers(status) {
@@ -238,14 +238,24 @@ function loadUsers(status) {
     body.innerHTML = "";
 
     // Lista as datas com exercicios
+    // const aListaDataExercicios = Array(
+    //     // "2022-08-02",
+    //     // "2022-08-01",
+    //     // "2022-07-28",
+    //     // "2022-07-27",
+    //     "2022-07-26",
+    //     "2022-07-25",
+    //     "2022-07-19",
+    // );
+
     const aListaDataExercicios = Array(
         // "2022-08-02",
         // "2022-08-01",
         // "2022-07-28",
         // "2022-07-27",
         "2022-07-26",
-        "2022-07-25",
-        "2022-07-19",
+        //"2022-07-25",
+        //"2022-07-19",
     );
 
     // Percorre as datas e lista os status por usuarios
