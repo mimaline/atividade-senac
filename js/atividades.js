@@ -3,7 +3,7 @@ function loadDadosExercicios(data_exercicios) {
     if (data_exercicios == "2022-07-19") {
         return new Array(
             // codigo - login - status - nome - data - observacao
-            Array(0, "999", "status_ok", "Codigo da Lista", data_exercicios, "ok"),
+            Array(0, "777", "status_ok", "Codigo da Lista", data_exercicios, "ok"),
             Array(1, "Gelvazio", "status_ok", "Gelvazio Camargo", data_exercicios, "ok"),
             Array(2, "waywl", "status_not_initialized", "SARA ZANIZ", data_exercicios, "Exercícios não inicializados ainda, conferir!"),
             Array(3, "JanesDays", "status_ok", "RICK JANES MATOS DIAS", data_exercicios, "precisa colocar em pasta por data..."),
@@ -79,7 +79,7 @@ function loadDadosExercicios(data_exercicios) {
     } else if (data_exercicios == "2022-07-26") {
         return new Array(
             // codigo - login - status - nome - data - observacao
-            Array(0, "0", "status_ok", "Codigo da Lista", data_exercicios, "ok"),
+            Array(0, "999", "status_ok", "Codigo da Lista", data_exercicios, "ok"),
             Array(1, "Gelvazio", "status_ok", "Gelvazio Camargo", data_exercicios, ""),
             Array(2, "waywl", "status_not_verified", "SARA ZANIZ", data_exercicios, ""),
             Array(3, "JanesDays", "status_ok", "RICK JANES MATOS DIAS", data_exercicios, ""),
