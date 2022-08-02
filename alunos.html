@@ -20,11 +20,40 @@
         color: white;
     }
     
-    .lista-exercicio ol li {
-        color: aliceblue;
-        font-size: larger;
-        padding: 5px;
+    .lista-exercicio {
         background-color: #004384;
+    }
+    
+    .lista-exercicio ul {
+        padding: 20px 50px;
+    }
+    
+    .lista-exercicio ul li {
+        color: aliceblue;
+        font-size: medium;
+        padding: 5px;
+        list-style: none;
+    }
+    
+    .lista-exercicio ul li button {
+        background-color: rgb(0, 149, 255);
+        outline: none;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        margin-right: 10px;
+        color: aliceblue;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+    }
+    
+    .lista-exercicio ul li button:hover {
+        background-color: rgba(0, 149, 255, 0.24);
+    }
+    
+    .menu a {
+        font-size: 12px;
     }
 </style>
 
@@ -40,17 +69,19 @@
                 <a href="#" alt="" onclick="loadUsers('status_not_initialized')">Somente Não inicializado</a>
                 <a href="#" alt="" onclick="loadUsers('status_incomplete')">Somente Incompletos</a>
             </div>
+
             <div class="lista-exercicio">
-                <ol>
-                    <li>19-07-2022 - LISTA DE EXERCICIOS SEQUENCIAIS EM VISUALG - APOSTILA 300 IDEIAS DO 1.1.1 ATE O 1.1.15 </li>
-                    <li>25-07-2022 - LISTA DE EXERCICIOS SE E SENAO EM VISUALG</li>
-                    <li>26-07-2022 - LISTA DE EXERCICIOS SEQUENCIAIS EM JAVA - APOSTILA 300 IDEIAS DO 1.1.1 ATE O 1.1.15</li>
-                    <li>27-07-2022 - LISTA DE EXERCICIOS SE E SENAO EM JAVA</li>
-                    <!-- <li>28-07-2022 - Exercicios 28-07-2022 - CONDICIONAIS JAVA</li>
-                    <li>01-08-2022 - Exercicios 01-08-2022 - CONDICIONAIS JAVA</li>
-                    <li>02-08-2022 - Exercicios 02-08-2022 - REPETICAO JAVA</li> -->
-                </ol>
+                <ul>
+                    <!-- <li>Exercicios 19-07-2022 - LISTA 000 - SEQUENCIAIS - VISUALG - APOSTILA 300 IDEIAS DO 1.1.1 ATE O 1.1.15 </li>
+                    <li>Exercicios 25-07-2022 - LISTA 001 - SE E SENAO VISUALG - LISTA DE EXERCICIOS SE E SENAO EM VISUALG</li> -->
+                    <li><button onclick="loadListaExerciciosUsers('0')">Conferir Exercicios</button>Exercicios 26-07-2022 - LISTA 0 - SEQUENCIAIS EM JAVA - APOSTILA 300 IDEIAS DO 1.1.1 ATE O 1.1.15</li>
+                    <li><button onclick="loadListaExerciciosUsers('1')">Conferir Exercicios</button>Exercicios 27-07-2022 - LISTA 1 - CONDICIONAIS - JAVA</li>
+                    <li><button onclick="loadListaExerciciosUsers('2')">Conferir Exercicios</button>Exercicios 28-07-2022 - LISTA 2 - CONDICIONAIS - JAVA</li>
+                    <li><button onclick="loadListaExerciciosUsers('3')">Conferir Exercicios</button>Exercicios 01-08-2022 - LISTA 3 - CONDICIONAIS - JAVA</li>
+                    <li><button onclick="loadListaExerciciosUsers('4')">Conferir Exercicios</button>Exercicios 02-08-2022 - LISTA 4 - REPETICAO - JAVA</li>
+                </ul>
             </div>
+
             <table class="container-table">
                 <thead>
                     <tr>

@@ -11,7 +11,7 @@ SEM ESPACOS
 TUDO MINUSCULO...
 
 DEVERA FICAR CONFORME ABAIXO
-    1 - logica-programacao
+    1 - logica-programacao -> AQUI VAI OS EXERCICIOS DO VISUALG!
     2 - java
     3 - html-css-javascript
     4 - php
