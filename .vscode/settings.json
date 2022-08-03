@@ -4,7 +4,7 @@
   },
   "editor.formatOnSave" : true,
   "workbench.startupEditor" : "newUntitledFile",
-  "editor.fontSize" : 16,
+  "editor.fontSize" : 20,
   "javascript.suggest.autoImports" : true,
   "javascript.updateImportsOnFileMove.enabled" : "always",
   "editor.rulers" : [
