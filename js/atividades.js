@@ -427,8 +427,8 @@ function loadAllExercises(tipo) {
         alert("Tipo invalido!");
     }
 
-    // esconde exercicios da prova
-    // document.querySelector("#lista6").style.setProperty("display", "none", "important");
-    // document.querySelector("#lista7").style.setProperty("display", "none", "important");
-    // document.querySelector("#lista8").style.setProperty("display", "none", "important");
+    // esconde exercicios de treinos ate a prova
+    document.querySelector("#lista6").style.setProperty("display", "none", "important");
+    document.querySelector("#lista7").style.setProperty("display", "none", "important");
+    document.querySelector("#lista8").style.setProperty("display", "none", "important");
 }
