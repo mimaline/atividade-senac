@@ -415,29 +415,20 @@ function loadDataFromHTML(user, codigo, status, data_status, observacao, nome) {
                             </tr>`;
 }
 
-function loadExercises(lista) {
+function loadAllExercises(tipo) {
+    document.querySelector("#CONDICIONAIS").style.setProperty("display", "none", "important");
+    document.querySelector("#REPETICAO").style.setProperty("display", "none", "important");
 
-    // inicia escondendo todos
-    document.querySelector("#lista1").style.setProperty("display", "none", "important");
-    document.querySelector("#lista2").style.setProperty("display", "none", "important");
-    document.querySelector("#lista3").style.setProperty("display", "none", "important");
-    document.querySelector("#lista4").style.setProperty("display", "none", "important");
-    document.querySelector("#lista5").style.setProperty("display", "none", "important");
-    document.querySelector("#lista6").style.setProperty("display", "none", "important");
-    document.querySelector("#lista7").style.setProperty("display", "none", "important");
-
-    if (lista == "TODOS") {
-        // mostra tudo
-        lista = 1;
-        while (lista <= 6) {
-            const id_lista = "lista" + lista;
-            document.querySelector("#" + id_lista).style.setProperty("display", "block", "important");
-
-            lista++;
-        }
+    if (tipo == "CONDICIONAIS") {
+        document.querySelector("#CONDICIONAIS").style.setProperty("display", "block", "important");
+    } else if (tipo == "REPETICAO") {
+        document.querySelector("#REPETICAO").style.setProperty("display", "block", "important");
     } else {
-        // mostra a lista conforme o id
-        const id_lista = lista;
-        document.querySelector("#" + id_lista).style.setProperty("display", "block", "important");
+        alert("Tipo invalido!");
     }
+
+    // esconde exercicios da prova
+    // document.querySelector("#lista6").style.setProperty("display", "none", "important");
+    // document.querySelector("#lista7").style.setProperty("display", "none", "important");
+    // document.querySelector("#lista8").style.setProperty("display", "none", "important");
 }

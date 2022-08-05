@@ -7,56 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desenvolvimento - Tech</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/atividades.css">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 </head>
+
 <style>
-    footer {
-        height: 50px;
-    }
-    
-    ol li {
-        font-size: 20px;
-    }
-    
-    ol li:last-child {
-        padding-bottom: 50px;
-    }
-    /* css combobox */
-    
     .lista-exercicio {
-        background-color: #004384;
-        color: black;
-        padding-bottom: 35px;
+        /* height: 100vh; */
     }
     
-    .lista-exercicio h1 {
-        color: aliceblue;
-        font-size: 30px;
-        text-align: center;
-        border-top: 3px solid aliceblue;
-        border-bottom: 3px solid aliceblue;
-        padding: 5px;
-    }
-    
-    .lista-exercicio h2 {
-        text-align: center;
-    }
-    
-    .lista-exercicio ol li {
-        color: aliceblue;
-        font-size: larger;
-        padding: 20px 20px;
-    }
-    
-    .lista-exercicio ol li:last-child {
-        padding-bottom: 45px;
-    }
-    
-    .titulo-exercicio {
-        color: rgb(234, 255, 0);
-        font-size: 25px;
+    .container {
+        display: flex;
+        flex-direction: column;
     }
 </style>
 
@@ -65,8 +29,12 @@
         <!-- Inclui o Menu Unico Atraves de JavaScript -->
         <div include-html-menu="menu.html"></div>
 
-        <div class="container">
-            <div class="lista-exercicio" id="lista0">
+        <div class="menu">
+            <a href="#" alt="" onclick="loadAllExercises('CONDICIONAIS')">Condicionais</a>
+            <a href="#" alt="" onclick="loadAllExercises('REPETICAO')">Repeticao</a>
+        </div>
+        <div class="container" style="display: none;" id="CONDICIONAIS">
+            <div class="lista-exercicio" id="lista1">
                 <h1 href="#">Exercicios 26-07-2022 - LISTA 0 - SEQUENCIAIS</h1>
                 <ol style="color:white; padding-top: 10px; display:flex;flex-direction: column;gap:10px;">
                     <li>
@@ -76,7 +44,7 @@
                 </ol>
             </div>
 
-            <div class="lista-exercicio" id="lista1">
+            <div class="lista-exercicio" id="lista2">
                 <h1 href="#">Exercicios 27-07-2022 - LISTA 1 - CONDICIONAIS</h1>
                 <ol style="color:white; padding-top: 10px; display:flex;flex-direction: column;gap:10px;">
                     <li>
@@ -134,7 +102,7 @@
                 </ol>
             </div>
 
-            <div class="lista-exercicio" id="lista2">
+            <div class="lista-exercicio" id="lista3">
                 <h1 href="#">Exercicios 28-07-2022 - LISTA 2 - CONDICIONAIS</h1>
                 <ol>
                     <li><strong class="titulo-exercicio">Exercicio 01 </strong> </br> Faca um algoritmo que leia o nome e as tres notas de um aluno e ao final, escreva o seu nome, sua media e se ele foi aprovado. Media de aprovacao igual a 8.
@@ -160,7 +128,7 @@
                 </ol>
             </div>
 
-            <div class="lista-exercicio" id="lista3">
+            <div class="lista-exercicio" id="lista4">
                 <h1 href="#">Exercicios 01-08-2022 - LISTA 3 - CONDICIONAIS</h1>
                 <ol>
                     <li><strong class="titulo-exercicio">Exercicio 01 </strong> </br> Conta telefônica - Uma conta telefônica é composta dos seguintes custos: assinatura: R$ 17,90 impulsos: R$ 0,04 por impulso que exceder a 90 interurbanos chamadas p/ celular:
@@ -228,13 +196,33 @@
                     </li>
                 </ol>
             </div>
-            <div class="lista-exercicio" id="lista4">
-                <h1 href="#">Exercicios 02-08-2022 - LISTA 1 - REPETICAO</h1>
+        </div>
+
+        <div class="container" style="display: none;" id="REPETICAO">
+            <div class="lista-exercicio" id="lista5">
+                <h1 href="#">Atividades Aula 04-08-2022 - REPETICAO</h1>
                 <ol>
-                    <li><strong class="titulo-exercicio">Exercicio 01 </strong>
-                        </br> Suponha que para cada aluno de uma sala exista uma ficha contendo o nome e a idade de 05 alunos.Faca algoritmo que determine quantos alunos tem idade maior que 30.
+                    <li><strong class="titulo-exercicio">Atividade 01 - Aula 04-08-2022</strong>
+                        </br>Crie um algoritmo que leia um numero e escreva a sequência de zero até o número.
                     </li>
-                    <li><strong class="titulo-exercicio">Exercicio 02 </strong> </br> Dado o modelo(Fiat, Ford,GM, Wolskwagen,Toyota,Honda), ano fabricação, cor e placa de 5 carros.
+                    <li><strong class="titulo-exercicio">Atividade 02 - Aula 04-08-2022</strong>
+                        </br>Crie um algoritmo que leia um numero e escreva a sequência decrescente até zero.
+                    </li>
+                    <li><strong class="titulo-exercicio">Atividade 03 - Aula 04-08-2022</strong>
+                        </br>Crie um algoritmo que recebe 2 números e multiplica o num1 pelo num2 através
+                        </br>de somas repetidas.(Exemplo:2 e 3 = 2 + 2 + 2 => 6)
+                    </li>
+                </ol>
+                <div class="lista-exercicio" id="lista6"></div>
+                <h1>Exercicios 08-08-2022 - LISTA 01 - REPETICAO</h1>
+                <ol>
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 01 </strong>
+                        </br>Suponha que para cada aluno de uma sala exista uma ficha contendo o nome e a idade de 05 alunos.
+                        </br>Faça algoritmo que determine quantos alunos tem idade maior que 30.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 02 </strong>
+                        </br> Dado o modelo(Fiat, Ford,GM, Wolskwagen,Toyota,Honda), ano fabricação, cor e placa de 5 carros.
                         </br> Faca um algoritmo que:
                         </br>
                         a)Imprima quantos carros sao da cor verde e o percentual em relacao ao total.
@@ -245,17 +233,159 @@
                     </li>
                     <li>
                         <strong class="titulo-exercicio">Exercicio 03 </strong>
-                        </br> Dada uma relacao de 5 nomes de carros, imprima quantos sao da cor azul.
+                        </br>Dada uma relacao de 5 nomes de carros, imprima quantos sao da cor azul.
                         <br>Sendo que para cada carro tem-se uma ficha contendo a cor e o nome.
                     </li>
                     <li><strong class="titulo-exercicio">Exercicio 04 </strong>
-                        </br> Dada uma serie de 5 valores, faca um algoritmo que calcule e escreva a media destes.
+                        </br>Dada uma serie de 5 valores, faca um algoritmo que calcule e escreva a media destes.
                         </br>Entretanto, se a media obtida for maior que 8, devera ser atribuido 10 para a media.
                     </li>
-                    <li><strong class="titulo-exercicio">Exercicio 10 </strong> </br> Determinado pais tem populacao de 5 milhoes de habitantes com taxa de natalidade de 4 % e mortalidade de 1,1 %. Um segundo pais tem 7 milhoes de pessoas e natalidade de
-                        2% e mortalidade de 0,8% . Em quanto tempo o pais 1 ira ultrapassar o pais 2? Quantos milhoes de população tera o pais 1 e o pais 2 quando isso ocorrer?
+                    <li><strong class="titulo-exercicio">Exercicio 05 </strong>
+                        </br>Determinado pais tem populacao de 5 milhoes de habitantes com taxa de natalidade de 4 % e mortalidade de 1,1 %.
+                        </br>Um segundo pais tem 7 milhoes de pessoas e natalidade de 2% e mortalidade de 0,8% .
+                        </br>Em quanto tempo o pais 1 ira ultrapassar o pais 2?
+                        </br>Quantos milhoes de população tera o pais 1 e o pais 2 quando isso ocorrer?
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 06</strong>
+                        </br>Implemente um algoritmo que leia um número e uma opção de listagem.
+                        </br>Com base nessa opção, escreva a sequência dos números:
+                        </br> em ordem crescente (de zero até o número)
+                        </br>ou decrescente (do número até zero).
+                        </br>Exemplo:
+                        </br>Opcao=> 1 - CRESCENTE
+                        </br>Opcao=> 2 - DECRESCENTE
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 07</strong>
+                        </br>Crie um algoritmo que leia um número e calcule seu fatorial.Ex: 5! = 5 * 4 * 3 * 2 * 1.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 08</strong>
+                        </br>Escrever um algoritmo que leia um número n que indica quantos valores
+                        </br>devem ser lidos a seguir. Para cada número lido, mostre os valores lidos
+                        </br>e o fatorial destes valores.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 09</strong>
+                        </br>Crie um algoritmo que receba vários números inteiros e positivos
+                        </br>e imprima o produto dos números ímpares digitados e a soma dos pares.
+                        </br>O algoritmo encerra quando o zero ou um número negativo é digitado.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 10</strong>
+                        </br>Escreva um algoritmo que mostre o menor e o maior
+                        </br>dos números digitados pelo usuário.
+                        </br>Termine a leitura se o usuário digitar zero.
                     </li>
                 </ol>
+            </div>
+            <div class="lista-exercicio" id="lista6">
+                <h1 href="#">Exercicios Aula 09-08-2022 - LISTA 02 - REPETICAO</h1>
+                <ol>
+                    <li><strong class="titulo-exercicio">Exercicio 01</strong>
+                        </br>Escreva um algoritmo que exiba 20 vezes a mensagem “Eu gosto de estudar Algoritmos!”.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 02</strong>
+                        </br> Escreva um algoritmo que calcule a soma dos números de 1 a 15.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 03</strong>
+                        </br> Leia o nome do usuário e escreva o nome dele na tela 10 vezes.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 04</strong>
+                        </br> Leia o nome um número do usuário um número N e escreva o nome dele na tela N vezes.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 05</strong>
+                        </br>Escreva um algoritmo que leia 10 números do usuário e calcule a soma desses números.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 06</strong>
+                        </br>Leia a idade de 20 pessoas e exiba a soma das idades.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 07</strong>
+                        </br>Leia a idade de 20 pessoas e exiba a média das idades.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 08</strong>
+                        </br>Leia a idade de 20 pessoas e exiba quantas pessoas são maiores de idade.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 09</strong>
+                        </br>Leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 10</strong>
+                        </br>Crie um algoritmo leia um número do usuário e exiba a sua tabuada de multiplicação.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 11</strong>
+                        </br>Escreva um algoritmo que leia 20 números do usuário e exiba quantos números são maiores do que 8
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 12</strong>
+                        </br> Escreva um algoritmo que leia 20 números do usuário e exiba quantos números são pares
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 13</strong>
+                        </br> Faça um algoritmo que leia 20 números e, ao final, escreva quantos estão entre 0 e 100.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 14</strong>
+                        </br>Faça um algoritmo que leia 20 números e, ao final, escreva quantos estão entre 0 e 100,
+                        </br>quantos estão entre 101 e 200 e quantos são maiores de 200.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 15</strong>
+                        </br>Escreva um algoritmo que leia uma sequência de números do usuário e realize a soma desses números.
+                        </br>Encerre a execução quando um número negativo for digitado.
+                    </li>
+                </ol>
+            </div>
+            <div class="lista-exercicio" id="lista7">
+                <h1 href="#">Atividades Aula 10-08-2022 - LISTA 03 - REPETICAO</h1>
+                <ol>
+                    <li><strong class="titulo-exercicio">Exercicio 01</strong>
+                        </br>Desenvolver um algoritmo que efetue a soma de todos os números ímpares que são múltiplos de
+                        </br>três e que se encontram no conjunto dos números de 1 até 500.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 02</strong>
+                        </br> Desenvolver um algoritmo que leia a altura de 15 pessoas.
+                        </br> Este programa deverá calcular e mostrar:
+                        </br> a. A menor altura do grupo;
+                        </br> b. A maior altura do grupo;
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 03</strong>
+                        </br>Desenvolver um algoritmo que leia um número não determinado de valores e calcule
+                        </br>e escreva a média aritmética dos valores lidos, a quantidade de valores positivos,
+                        </br>a quantidade de valores negativos e o percentual de valores negativos e positivos.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 04</strong>
+                        </br> Escrever um algoritmo que leia uma quantidade desconhecida de números e conte quantos deles estão
+                        </br>nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100]. A entrada de dados deve terminar quando
+                        </br>for lido um número negativo
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 05</strong>
+                        </br>Faça um algoritmo estruturado que leia uma quantidade não determinada de números positivos.
+                        </br>Calcule a quantidade de números pares e ímpares, a média de valores pares e a média geral dos números lidos.
+                        </br>O número que encerrará a leitura será zero.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 06</strong>
+                        </br> Escrever um algoritmo que gera e escreve os números ímpares entre 100 e 200.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 07</strong>
+                        </br>Escrever um algoritmo que leia um valor para uma variável N de 1 a 10 e calcule a tabuada de N.
+                        </br>Mostre a tabuada na forma: 0 x N = 0, 1 x N = 1N, 2 x N = 2N, ..., 10 x N = 10N.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 08</strong>
+                        </br>Escreva um algoritmo que leia um valor inicial A e uma razão R e imprima uma seqüência em P.A. contendo 10 valores.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 09</strong>
+                        </br>Escreva um algoritmo que leia um valor inicial A e uma razão R e imprima uma seqüência em P.G. contendo 10 valores.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 10</strong>
+                        </br>Escreva um algoritmo que leia um valor inicial A e imprima a seqüência de valores do cálculo de A! e o seu resultado.
+                        </br>Ex: 5! = 5 X 4 X 3 X 2 X 1 = 120
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 11</strong>
+                        </br>Imprima os 100 primeiros termos da sequencia de Fibonacci.
+                        </br>Sequencia de Fibonacci => 0, 1, 1, 2, 3, 5, 8, 13, 21...
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 12</strong>
+                        </br>Escreva um algoritmo que encontre o quinto número maior que 1000, cuja divisão por 11 tenha resto 5.
+                    </li>
+                </ol>
+                <div class="lista-exercicio" id="lista8" style="display:none;">
+                    <h1>PROVA - Aula 15-08-2022 - LISTA 04 - 100 ALGORITMO - ATIVIDADES EM GRUPO</h1>
+                    <div class="menu">
+                        <a href="exercicios01.html" alt="">Lista de Exercicios</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -266,9 +396,8 @@
 <script src="js/script.js"></script>
 <script src="js/atividades.js"></script>
 
-<script>
-    // loadExercises("TODOS");
-
+<script defer>
+    loadAllExercises('REPETICAO');
     includeHTML("include-html-menu");
     includeHTML("include-html-rodape");
 </script>

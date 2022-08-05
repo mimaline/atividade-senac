@@ -7,55 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desenvolvimento - Tech</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/alunos.css">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 </head>
-<style>
-    .footer {
-        height: 20px;
-    }
-    
-    .sub-menu {
-        color: white;
-    }
-    
-    .lista-exercicio {
-        background-color: #004384;
-    }
-    
-    .lista-exercicio ul {
-        padding: 20px 50px;
-    }
-    
-    .lista-exercicio ul li {
-        color: aliceblue;
-        font-size: medium;
-        padding: 5px;
-        list-style: none;
-    }
-    
-    .lista-exercicio ul li button {
-        background-color: rgb(0, 149, 255);
-        outline: none;
-        padding: 10px;
-        border-radius: 10px;
-        border: none;
-        margin-right: 10px;
-        color: aliceblue;
-        font-size: 15px;
-        cursor: pointer;
-        transition: all .4s ease-in-out;
-    }
-    
-    .lista-exercicio ul li button:hover {
-        background-color: rgba(0, 149, 255, 0.24);
-    }
-    
-    .menu a {
-        font-size: 12px;
-    }
-</style>
 
 <body>
     <div class="container-principal">
@@ -107,7 +63,8 @@
 <script src="js/atividades.js"></script>
 
 <script>
-    loadUsers("TODOS");
+    // loadUsers("TODOS");
+    loadUsers("status_ok");
     // loadUsers("status_not_initialized");
     includeHTML("include-html-menu");
     includeHTML("include-html-rodape");
