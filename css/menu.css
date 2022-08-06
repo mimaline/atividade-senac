@@ -52,6 +52,7 @@
     background-color: var(--color-blue-senac-hover);
     color: #fff;
     font-weight: bolder;
+    border: 0.1px solid #fff;
 }
 
 .coluna {
