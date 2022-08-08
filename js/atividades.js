@@ -441,4 +441,8 @@ function loadAllProvas() {
     // mostra os links das provas
     document.querySelector("#PROVAREPETICAOGRUPOS").style.setProperty("display", "block", "important");
     document.querySelector("#PROVAREPETICAO").style.setProperty("display", "block", "important");
+
+    // mostra as listas em que elas estao
+    document.querySelector("#lista7").style.setProperty("display", "block", "important");
+    document.querySelector("#lista8").style.setProperty("display", "block", "important");
 }
