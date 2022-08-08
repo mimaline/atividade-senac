@@ -432,3 +432,13 @@ function loadAllExercises(tipo) {
     document.querySelector("#lista7").style.setProperty("display", "none", "important");
     document.querySelector("#lista8").style.setProperty("display", "none", "important");
 }
+
+function loadAllProvas() {
+    // esconde os exercicios
+    document.querySelector("#CONDICIONAIS").style.setProperty("display", "none", "important");
+    document.querySelector("#REPETICAO").style.setProperty("display", "none", "important");
+
+    // mostra os links das provas
+    document.querySelector("#PROVAREPETICAOGRUPOS").style.setProperty("display", "block", "important");
+    document.querySelector("#PROVAREPETICAO").style.setProperty("display", "block", "important");
+}
