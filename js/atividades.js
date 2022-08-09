@@ -507,8 +507,9 @@ function loadAllExercises(tipo) {
 
     // esconde exercicios de treinos ate a prova
     document.querySelector("#lista6").style.setProperty("display", "none", "important");
-    document.querySelector("#lista7").style.setProperty("display", "none", "important");
+    // document.querySelector("#lista7").style.setProperty("display", "none", "important");
     document.querySelector("#lista8").style.setProperty("display", "none", "important");
+    document.querySelector("#lista9").style.setProperty("display", "none", "important");
 }
 
 function loadAllProvas() {
