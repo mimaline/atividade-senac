@@ -506,10 +506,9 @@ function loadAllExercises(tipo) {
     }
 
     // esconde exercicios de treinos ate a prova
-    document.querySelector("#lista6").style.setProperty("display", "none", "important");
-    // document.querySelector("#lista7").style.setProperty("display", "none", "important");
     document.querySelector("#lista8").style.setProperty("display", "none", "important");
     document.querySelector("#lista9").style.setProperty("display", "none", "important");
+    document.querySelector("#lista10").style.setProperty("display", "none", "important");
 }
 
 function loadAllProvas() {
@@ -518,10 +517,10 @@ function loadAllProvas() {
     document.querySelector("#REPETICAO").style.setProperty("display", "none", "important");
 
     // mostra os links das provas
-    document.querySelector("#PROVAREPETICAOGRUPOS").style.setProperty("display", "block", "important");
-    document.querySelector("#PROVAREPETICAO").style.setProperty("display", "block", "important");
+    document.querySelector("#PROVA").style.setProperty("display", "block", "important");
 
     // mostra as listas em que elas estao
-    document.querySelector("#lista7").style.setProperty("display", "block", "important");
     document.querySelector("#lista8").style.setProperty("display", "block", "important");
+    document.querySelector("#lista9").style.setProperty("display", "block", "important");
+    document.querySelector("#lista10").style.setProperty("display", "block", "important");
 }
