@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 </head>
 
-<body>
+<body onload="callApiAuxilios()">
     <div class="container-principal">
         <!-- Inclui o Menu Unico Atraves de JavaScript -->
         <div include-html-menu="menu.html"></div>
@@ -49,6 +49,12 @@
 
 <script>
     function loadDados(mes) {
+
+        callApiAuxilios(mes);
+
+        return true;
+
+
         var url = "https://api.portaldatransparencia.gov.br/api-de-dados/auxilio-emergencial-beneficiario-por-municipio";
 
         if (mes == undefined) {
@@ -120,6 +126,102 @@
                 console.log(data);
             });
 
+    }
+
+    async function callApiAuxilios() {
+        const token = "iiY98#5pGjo6Ji0aGhV#bFhU5#B0fc93aCJYp1j";
+
+        let url = "https://apisenac2022.herokuapp.com/api.php/auxilios";
+
+
+        url = "https://apisenac2022.herokuapp.com";
+
+
+        url = "https://apisenac2022.herokuapp.com/api.php/ping";
+
+        url = "https://apisenac2022.herokuapp.com/api.php/users";
+
+        // url = "https://api.github.com/users/Gelvazio";
+
+        // var myHeaders = new Headers();
+
+        var content = "Hello World";
+
+        // myHeaders = new Headers({
+        //     "Content-Type": "Application/json",
+        //     "Accept": "Application/json",
+        //     "Content-Length": content.length.toString(),
+        //     "X-Custom-Header": "ProcessThisImmediately",
+        // });
+
+        var myInit = {
+            method: 'GET',
+            headers: getHeaders(),
+            mode: 'no-cors',
+            cache: 'default'
+        };
+
+        var myInit02 = {
+            headers: {
+                "Accept": "Application/json",
+                "chave-api-dados": token,
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Credentials": true
+            },
+            mode: 'no-cors',
+        }
+
+        const promise = await fetch(url, myInit)
+            // Converting the response to a JSON object
+            //.then(response => response.json())
+            .then(function(response) {
+                if (response.ok) {
+                    return response.json();
+                }
+                console.log('Network response was not ok.');
+            })
+            .then(data => {
+
+                debugger;
+
+                console.log(data);
+            })
+            .catch(function(error) {
+                console.log('There has been a ' +
+                    'problem with your fetch operation: ' + error.message);
+            });
+    }
+
+    function getHeaders() {
+        return new Headers({
+            "HTTP_TOTAL_ROUTE_TIME": "0",
+            //"HTTP_X_REQUEST_START": "1660344692353",
+            "HTTP_CONNECT_TIME": "0",
+            "HTTP_VIA": "1.1 vegur",
+            "HTTP_X_FORWARDED_PORT": "443",
+            "HTTP_X_FORWARDED_PROTO": "https",
+            "HTTP_X_FORWARDED_FOR": "186.209.28.244",
+            //"HTTP_X_REQUEST_ID": "2e7f4001-e2ed-4697-9daf-d69ce94b1b6a",
+            "HTTP_ACCEPT_LANGUAGE": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,la;q=0.6,it;q=0.5,sl;q=0.4,gl;q=0.3,pl;q=0.2,es;q=0.1,zh-CN;q=0.1,zh;q=0.1",
+            "HTTP_ACCEPT_ENCODING": "gzip, deflate, br",
+            "HTTP_SEC_FETCH_DEST": "document",
+            "HTTP_SEC_FETCH_USER": "?1",
+            "HTTP_SEC_FETCH_MODE": "navigate",
+            "HTTP_SEC_FETCH_SITE": "none",
+            "HTTP_ACCEPT": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+            "HTTP_USER_AGENT": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36",
+            "HTTP_UPGRADE_INSECURE_REQUESTS": "1",
+            "HTTP_SEC_CH_UA_PLATFORM": "\"Windows\"",
+            "HTTP_SEC_CH_UA_MOBILE": "?0",
+            "HTTP_SEC_CH_UA": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"",
+            "HTTP_CACHE_CONTROL": "max-age=0",
+            //"HTTP_CONNECTION": "close",
+            "HTTP_HOST": "apisenac2022.herokuapp.com",
+            "Accept": "Application/json",
+            "chave-api-dados": "15455",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Credentials": true
+        });
     }
 </script>
 
