@@ -23,6 +23,12 @@
         display: flex;
         flex-direction: column;
     }
+    
+    a {
+        color: yellow;
+        font-size: 20px;
+        font-weight: bold;
+    }
 </style>
 
 <body>
@@ -34,6 +40,7 @@
             <a href="#" alt="" onclick="loadAllExercises('CONDICIONAIS')">Condicionais</a>
             <a href="#" alt="" onclick="loadAllExercises('REPETICAO')">Repeticao</a>
             <a href="#" alt="" onclick="loadAllExercises('VETORES')">Vetores</a>
+            <a href="#" alt="" onclick="loadAllExercises('MATRIZES')">Matrizes</a>
             <a href="#" alt="" onclick="loadAllProvas()">Atividades</a>
         </div>
         <div class="container" style="display: none;" id="CONDICIONAIS">
@@ -396,8 +403,8 @@
                     </li>
                     <li><strong class="titulo-exercicio">Exercicio 08</strong>
                         <br> Faça um algoritmo que leia um nome e o guarde na memória.
-                        <br>Após a leitura, verifique se a palavra é um palíndromo.
-                        <br>Um palíndromo é aquela palavra que a sua leitura é a mesma da esquerda para a direita e vice versa. Exemplo: ARARA, ANA, etc.
+                        <br> Após a leitura, verifique se a palavra é um palíndromo.
+                        <br> Um palíndromo é aquela palavra que a sua leitura é a mesma da esquerda para a direita e vice versa. Exemplo: ARARA, ANA, etc.
                     </li>
                     <li><strong class="titulo-exercicio">Exercicio 09</strong>
                         <br>Faça um algoritmo que leia Nome idade e sexo de N pessoas. Após a leitura faça:
@@ -412,6 +419,110 @@
                         <br>c. Imprima o Nome e a média dos alunos reprovados (Média menor que 5.0).
                         <br>d. Imprima o percentual de alunos aprovados.
                         <br>e. Imprima o percentual de alunos reprovados.
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="container" style="display: none;" id="MATRIZES">
+            <div class="lista-exercicio" id="lista12">
+                <h1 href="#">Atividades Aula 17-08-2022 - LISTA DE EXERCICIOS DO TIPO MATRIZES</h1>
+                <ol>
+                    <li><strong class="titulo-exercicio">Exercicio 01</strong>
+                        <br> Faca uma matriz A de ordem 3x3 que:
+                        <br> leia nome, idade e sexo de nove pessoas.
+                        <br> Imprima os valores da matriz gerada.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 02</strong>
+                        <br> Dadas duas matrizes A e B de ordem 3 X 3.
+                        <br> Matriz A =
+                        <br> [
+                        <br>&nbsp;&nbsp;[2, 59, 617],
+                        <br>&nbsp;&nbsp;[8, 5, 95],
+                        <br>&nbsp;&nbsp;[1, 59, 67]
+                        <br> ]
+                        <br> Matriz B =
+                        <br> [
+                        <br> &nbsp;&nbsp;[22, 559, 678],
+                        <br> &nbsp;&nbsp;[13, 59 , 7],
+                        <br> &nbsp;&nbsp;[27, 159, 627]
+                        <br> ]
+                        <br> Faca um algoritmo que some as duas e gere a matriz C que é a Soma dos respectivos elementos de A e B.
+                        <br> Imprima os valores das tres matrizes.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 03</strong>
+                        <br> Dado uma matriz A de ordem 3x3.
+                        <br> Matriz A =
+                        <br> [
+                        <br>&nbsp;&nbsp;[2, 5, 7],
+                        <br>&nbsp;&nbsp;[8, 9, 3],
+                        <br>&nbsp;&nbsp;[1, 6, 10]
+                        <br> ]
+                        <br> Faca um algoritmo que:
+                        <br> a. Calcule a soma dos elementos da primeira coluna
+                        <br> b. calcule o produto dos elementos da primeira linha
+                        <br> c. calcule a soma de todos os elementos da matriz;
+                        <br> d. Calcule a soma da diagonal principal
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 04</strong>
+                        <br> Dada uma matriz A 2x3 de valores reais(float ou Double)(salários).
+                        <br> Matriz A =
+                        <br> [
+                        <br>&nbsp;&nbsp;[2500.98, 5573.45, 7980.32],
+                        <br>&nbsp;&nbsp;[850.26, 987.23, 3536.24]
+                        <br> ]
+                        <br> Faça um algoritmo que faca a leitura destes valores e imprimia:
+                        <br> a. Soma dos dados de cada coluna
+                        <br> b. listar valores menores que a media.
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 05</strong>
+                        <br> Dada uma matriz de ordem 3X3.
+                        <br> Matriz A =
+                        <br> [
+                        <br>&nbsp;&nbsp;[1, 5, 9],
+                        <br>&nbsp;&nbsp;[7, 35, 8],
+                        <br>&nbsp;&nbsp;[3, 2, 6]
+                        <br> ]
+                        <br> Faca um algoritmo que:
+                        <br> a. gere a Matriz B transposta de A.
+                        <br> Explicacao sobre Matriz Transposta: <a href="https://www.todamateria.com.br/matriz-transposta/">clique aqui</a>
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 06</strong>
+                        <br> Dada uma matriz de ordem 3X3.
+                        <br> Matriz A =
+                        <br> [
+                        <br>&nbsp;&nbsp;[2, 5, 11],
+                        <br>&nbsp;&nbsp;[5, 4, 17],
+                        <br>&nbsp;&nbsp;[11, 17, 6]
+                        <br> ]
+                        <br> Faca um algoritmo que verifique se esta Matriz é simetrica.
+                        <br> Para isso sabemos que a Matriz é simetrica quando: Matriz A = Matriz A(Transposta).
+                        <br> Desse modo temos de gerar a Matriz transposta de A e ver se Aij = Aji.
+                        <br> Explicacao sobre Matriz Transposta: <a href="https://www.todamateria.com.br/matriz-transposta/">clique aqui</a>
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 07</strong>
+                        <br> Dada uma matriz de ordem 3X3.
+                        <br> Matriz A =
+                        <br> [
+                        <br>&nbsp;&nbsp;[2, 5, 11],
+                        <br>&nbsp;&nbsp;[5, 4, 17],
+                        <br>&nbsp;&nbsp;[11, 17, 6]
+                        <br> ]
+                        <br> Faca um algoritmo que gera a Matriz B Oposta desta matriz A.
+                        <br> Explicacao sobre Matriz Oposta: <a href="https://www.todamateria.com.br/matriz-transposta/">clique aqui</a>
+                    </li>
+                    <li><strong class="titulo-exercicio">Exercicio 08</strong>
+                        <br> Dada uma matriz de ordem 3X3.
+                        <br> Matriz A =
+                        <br> [
+                        <br>&nbsp;&nbsp;[2, 5, 11],
+                        <br>&nbsp;&nbsp;[5, 4, 17],
+                        <br>&nbsp;&nbsp;[11, 17, 6]
+                        <br> ]
+                        <br> Faca um algoritmo que gera a Matriz B Inversa desta matriz A.
+                        <br> Explicacao sobre Matriz Oposta: <a href="https://www.todamateria.com.br/matriz-transposta/">clique aqui</a>
+                    </li>
+                    <li>
+                        <h1>Fim...</h1>
                     </li>
                 </ol>
             </div>
