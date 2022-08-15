@@ -496,14 +496,16 @@ function loadDataFromHTML(user, codigo, status, data_status, observacao, nome) {
 function loadAllExercises(tipo) {
     document.querySelector("#CONDICIONAIS").style.setProperty("display", "none", "important");
     document.querySelector("#REPETICAO").style.setProperty("display", "none", "important");
+    document.querySelector("#VETORES").style.setProperty("display", "none", "important");
 
-    if (tipo == "CONDICIONAIS") {
-        document.querySelector("#CONDICIONAIS").style.setProperty("display", "block", "important");
-    } else if (tipo == "REPETICAO") {
-        document.querySelector("#REPETICAO").style.setProperty("display", "block", "important");
-    } else {
-        alert("Tipo invalido!");
-    }
+    document.querySelector("#" + tipo).style.setProperty("display", "block", "important");
+
+    // if (tipo == "CONDICIONAIS") {
+    // } else if (tipo == "REPETICAO") {
+    //     document.querySelector("#REPETICAO").style.setProperty("display", "block", "important");
+    // } else {
+    //     alert("Tipo invalido!");
+    // }
 
     // esconde exercicios de treinos ate a prova
     document.querySelector("#lista8").style.setProperty("display", "none", "important");
