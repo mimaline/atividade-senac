@@ -11,6 +11,9 @@
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </head>
 
 <body onload="callApiAuxilios()">
@@ -25,7 +28,12 @@
                     <li><button onclick="loadDados('202103')">202103</button>Dados Rio do Sul</li>
                     <li><button onclick="loadDados('202104')">202104</button>Dados Rio do Sul</li>
                     <li><button onclick="loadDados('202105')">202105</button>Dados Rio do Sul</li>
+                    <li><button onclick="callApiAuxilios()">Teste AJAX</button>Teste AJAX</li>
                 </ul>
+            </div>
+
+            <div id="alert" class="alert alert-primary" role="alert" style="display: none;">
+                This is a primary alert—check it out!
             </div>
 
             <table class="container-table">
@@ -50,7 +58,7 @@
 <script>
     function loadDados(mes) {
 
-        callApiAuxilios(mes);
+        callApiAuxilios("GET", "auxilios", mes);
 
         return true;
 
@@ -128,61 +136,57 @@
 
     }
 
-    async function callApiAuxilios() {
-        const token = "iiY98#5pGjo6Ji0aGhV#bFhU5#B0fc93aCJYp1j";
+    async function callApiAuxilios(method, port, param) {
 
-        let url = "https://apisenac2022.herokuapp.com/api.php/auxilios";
+        // const cors_url = "https://cors-anywhere.herokuapp.com/";
 
+        // Heroku Gelvazio
+        const cors_url = "https://corsvalidate.herokuapp.com/";
 
-        url = "https://apisenac2022.herokuapp.com";
+        const url = cors_url + "https://apisenac2022.herokuapp.com/api.php/";
 
+        if (port == undefined) {
+            port = "ping";
+        }
 
-        url = "https://apisenac2022.herokuapp.com/api.php/ping";
+        // Define a url
+        url = url + port;
 
-        url = "https://apisenac2022.herokuapp.com/api.php/users";
+        if (param != undefined) {
 
-        // url = "https://api.github.com/users/Gelvazio";
+            // var myForm = document.getElementById('myForm');
+            // formData = new FormData(myForm);
 
-        // var myHeaders = new Headers();
+            var formData = new FormData(form)
+
+            formData.append('username', 'Chris');
+        }
+
+        if (method == undefined) {
+            method = "GET";
+        }
 
         var content = "Hello World";
 
-        // myHeaders = new Headers({
-        //     "Content-Type": "Application/json",
-        //     "Accept": "Application/json",
-        //     "Content-Length": content.length.toString(),
-        //     "X-Custom-Header": "ProcessThisImmediately",
-        // });
-
-        var myInit = {
-            method: 'GET',
-            headers: getHeaders(),
-            mode: 'no-cors',
-            cache: 'default'
+        var body = {
+            "user": "Jhon Doe"
         };
 
-        var myInit02 = {
-            headers: {
-                "Accept": "Application/json",
-                "chave-api-dados": token,
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Credentials": true
-            },
-            mode: 'no-cors',
-        }
+        var myInit = {
+            method: method,
+            headers: getHeaders(),
+            mode: 'cors',
+            cache: 'default',
+            body: body
+        };
 
         const promise = await fetch(url, myInit)
             // Converting the response to a JSON object
-            //.then(response => response.json())
-            .then(function(response) {
-                if (response.ok) {
-                    return response.json();
-                }
-                console.log('Network response was not ok.');
-            })
+            .then(response => response.json())
             .then(data => {
+                var data = JSON.stringify(data);
 
-                debugger;
+                data = JSON.parse(data);
 
                 console.log(data);
             })
@@ -192,7 +196,7 @@
             });
     }
 
-    function getHeaders() {
+    function getHeaders01() {
         return new Headers({
             "HTTP_TOTAL_ROUTE_TIME": "0",
             //"HTTP_X_REQUEST_START": "1660344692353",
@@ -223,6 +227,162 @@
             "Access-Control-Allow-Credentials": true
         });
     }
+
+    function getHeaders() {
+        return new Headers({
+            //"Access-Control-Allow-Origin": "http://127.0.0.1:5500/indexTeste.html",
+            "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+            "Access-Control-Allow-Headers": "X-PINGOTHER, Content-Type",
+            "Access-Control-Max-Age": "86400",
+            "HTTP_HOST": "apisenac2022.herokuapp.com",
+            "Accept": "Application/json",
+            "chave-api-dados": "15455",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Credentials": true,
+            "Content-Type": "Application/json"
+        });
+    }
+
+    function callApiAjax() {
+        let url = "https://apisenac2022.herokuapp.com/api.php/auxilios";
+
+        url = "https://apisenac2022.herokuapp.com/api.php/ping";
+
+        const option = {
+            url: url
+        };
+
+        jQuery.ajaxPrefilter(function(options) {
+            if (options.crossDomain && jQuery.support.cors) {
+                options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+            }
+        });
+
+        jQuery.ajax({
+                url: "https://fiddle.jshell.net/favicon.png",
+                beforeSend: function(xhr) {
+                    xhr.overrideMimeType("text/plain; charset=x-user-defined");
+                }
+            })
+            .done(function(ret) {
+
+                //alert("success");
+
+                console.log(ret);
+
+            }).fail(function(error) {
+                // debugger;
+
+                let body = document.querySelector("#alert");
+
+                // mostra a tag de alertas
+                //                 $("#alert").show();
+
+
+                const message = error.responseText;
+
+                alerts(message);
+
+
+                //alert("error" + error.responseText);
+            }).always(function() {
+                //alert("complete");
+            });
+
+
+        // var jqxhr = $.ajax("example.php")
+        //     .done(function(ret) {
+        //         alert("success");
+        //         console.log(ret);
+        //     })
+        //     .fail(function() {
+        //         alert("error");
+        //     })
+        //     .always(function() {
+        //         alert("complete");
+        //     });
+
+        // // Perform other work here ...
+
+        // // Set another completion function for the request above
+        // jqxhr.always(function() {
+        //     alert("second complete");
+        // });
+
+
+    }
+
+    function alerts(message) {
+        // alertas bootstrap
+        // https://getbootstrap.com/docs/4.0/components/alerts/
+
+        const alerts = `
+            <div>
+                <div class="alert alert-primary" role="alert">
+                    This is a primary alert—check it out!Message: ${ message }
+                </div>
+
+                <div class="alert alert-secondary" role="alert">
+                    This is a secondary alert—check it out!Message: ${ message }
+                </div>
+
+                <div class="alert alert-success" role="alert">
+                    This is a success alert—check it out!Message: ${ message }
+                </div>
+
+                <div class="alert alert-danger" role="alert">
+                    This is a danger alert—check it out!Message: ${ message }
+                </div>
+
+                <div class="alert alert-warning" role="alert">
+                    This is a warning alert—check it out!Message: ${ message }
+                </div>
+
+                <div class="alert alert-info" role="alert">
+                    This is a info alert—check it out!Message: ${ message }
+                </div>
+
+                <div class="alert alert-light" role="alert">
+                    This is a light alert—check it out!Message: ${ message }
+                </div>
+
+                <div class="alert alert-dark" role="alert">
+                    This is a dark alert—check it out!Message: ${ message }
+                </div>;
+            </div>`;
+
+        let body = document.querySelector("#alert");
+
+        // mostra a tag de alertas
+        $("#alert").show();
+
+        body.innerHTML = alerts;
+
+    }
+
+    function callApiXmlHttpRequest(host) {
+
+        // var cors_api_host = 'cors-anywhere.herokuapp.com';
+        // var cors_api_url = 'https://' + cors_api_host + '/';
+        // var slice = [].slice;
+        // // var origin = window.location.protocol + '/' + window.location.host;
+        // var origin = window.location.protocol + '/' + host;
+
+        // var open = XMLHttpRequest.prototype.open;
+
+        // XMLHttpRequest.prototype.open = function() {
+        //     var args = slice.call(arguments);
+        //     var targetOrigin = /^https?:\/\/([^\/]+)/i.exec(args[1]);
+        //     if (targetOrigin && targetOrigin[0].toLowerCase() !== origin &&
+        //         targetOrigin[1] !== cors_api_host) {
+        //         args[1] = cors_api_url + args[1];
+        //     }
+        //     return open.apply(this, args);
+        // };
+
+    }
 </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" defer></script>
 
 </html>
