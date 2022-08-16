@@ -51,6 +51,35 @@ Isso vai esconder as pastas out e .idea, que sao arquivos locais da ide
 Novos projetos devem sempre ser criados dentro da pasta src e criando "packages" com as
 datas dos exercicios do dia.
 
+# Empresas Patrocinadoras/Apoiadoras do programa
+## Patrocínios:
+
+    Benner Sistemas,
+    Customax,
+    Datainfo,
+    Fácil/Espaider,
+    GovBR,
+    Havan Labs,
+    JB Software,
+    NDD,
+    Porter Group,
+    Quick Soft Tecnologia,
+    Senior Sistemas,
+    Softplan,
+    Studos,
+    Trier Sistemas,
+    WK Sistemas
+## Apoios
+    Arco Instituto,
+    Associação Catarinense de Tecnologia (Acate),
+    Communitech,
+    Centro de Inovação de Blumenau (CIB),
+    Federação Catarinense de Municípios (Fecam),
+    Gene Conecta,
+    Novale Hub – Centro de Inovação de Jaraguá do Sul,
+    Orion Parque Tecnológico,
+    Inovale - Polo de Inovação do Vale do Rio do Peixe e Sindicato das Empresas de Informática e Processamento de Dados da Grande Florianópolis (Seinflo).
+
 # Cronograma Aulas
 ## 2ª Semana Agosto
  * Aula 15-08-2022 - segunda-feira
