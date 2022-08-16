@@ -497,6 +497,7 @@ function loadAllExercises(tipo) {
     document.querySelector("#CONDICIONAIS").style.setProperty("display", "none", "important");
     document.querySelector("#REPETICAO").style.setProperty("display", "none", "important");
     document.querySelector("#VETORES").style.setProperty("display", "none", "important");
+    document.querySelector("#PROVA").style.setProperty("display", "none", "important");
 
     document.querySelector("#" + tipo).style.setProperty("display", "block", "important");
 
@@ -517,6 +518,8 @@ function loadAllProvas() {
     // esconde os exercicios
     document.querySelector("#CONDICIONAIS").style.setProperty("display", "none", "important");
     document.querySelector("#REPETICAO").style.setProperty("display", "none", "important");
+    document.querySelector("#VETORES").style.setProperty("display", "none", "important");
+    document.querySelector("#MATRIZES").style.setProperty("display", "none", "important");
 
     // mostra os links das provas
     document.querySelector("#PROVA").style.setProperty("display", "block", "important");
