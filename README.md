@@ -204,10 +204,10 @@ datas dos exercicios do dia.
 * Aula 10-10-2022 - segunda-feira - Aula 09
     * Projeto Integrador - Etapas finais
 
-* Aula 10-10-2022 - terca-feira - Aula 10
+* Aula 11-10-2022 - terca-feira - Aula 10
     * Projeto Integrador - Etapas finais
 
-* Aula 10-10-2022 - quarta-feira - Aula 11
+* Aula 12-10-2022 - quarta-feira - Aula 11
     * Projeto Integrador - Apresentacao - 2 ou 3 equipes
 
 * Aula 13-10-2022 - quinta-feira -
