@@ -69,6 +69,7 @@ datas dos exercicios do dia.
     Studos,
     Trier Sistemas,
     WK Sistemas
+
 ## Apoios
     Arco Instituto,
     Associação Catarinense de Tecnologia (Acate),
