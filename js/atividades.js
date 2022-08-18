@@ -498,15 +498,9 @@ function loadAllExercises(tipo) {
     document.querySelector("#REPETICAO").style.setProperty("display", "none", "important");
     document.querySelector("#VETORES").style.setProperty("display", "none", "important");
     document.querySelector("#PROVA").style.setProperty("display", "none", "important");
+    document.querySelector("#MATRIZES").style.setProperty("display", "none", "important");
 
     document.querySelector("#" + tipo).style.setProperty("display", "block", "important");
-
-    // if (tipo == "CONDICIONAIS") {
-    // } else if (tipo == "REPETICAO") {
-    //     document.querySelector("#REPETICAO").style.setProperty("display", "block", "important");
-    // } else {
-    //     alert("Tipo invalido!");
-    // }
 
     // esconde exercicios de treinos ate a prova
     document.querySelector("#lista8").style.setProperty("display", "none", "important");
