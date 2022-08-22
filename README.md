@@ -98,7 +98,7 @@ datas dos exercicios do dia.
 
 ## 3ª Semana Agosto
 * Aula 22-08-2022 - segunda-feira
-    * Video sobre Strings - Curso FIAP. PArte 01 e Parte 02.
+    * Video sobre Strings - Curso FIAP. Parte 01 e Parte 02.
     * Slide sobre Strings e Exceções: SLIDE ->Aula 15 - Strings e SLIDE -> Aula 17 - ExcecoesParte2
     * Passar exercicios com Strings e Excecoes;
 
