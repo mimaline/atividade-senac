@@ -29,7 +29,7 @@
         --size-sm: 768px;
         --size-xs: 500px;
     }
-    
+
     .dados-cursos {
         width: 50vw;
         height: 45vh;
@@ -40,18 +40,18 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     .dados-cursos .linha {
         padding: 5px;
     }
-    
+
     .dados-cursos .linha a {
         border: 0.1px solid var(--color-blue-senac-hover);
         padding: 10px;
         width: 150px;
         text-align: center;
     }
-    
+
     .content-cursos-free-2 {
         display: flex;
         height: 80vh;
@@ -60,7 +60,7 @@
         justify-content: center;
         align-content: center;
     }
-    
+
     .menu-cursos-free {
         background-color: var(--color-blue-senac);
         margin-top: 0;
@@ -73,7 +73,7 @@
         gap: 10px;
         border-radius: 25px;
     }
-    
+
     .menu-cursos-free a {
         list-style: none;
         padding: 15px;
@@ -88,7 +88,7 @@
         gap: 10px;
         color: aliceblue;
     }
-    
+
     .menu-cursos-free a:hover {
         box-shadow: 0 10px 10px var(--color-blue-senac);
         transform: translateY(-5px);
@@ -97,10 +97,24 @@
         font-weight: bolder;
         border: 0.1px solid #fff;
     }
+
+    .linha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .linha a {
+        height: 70px;
+    }
 </style>
 
 <body>
     <div class="container-principal">
+
+
+
         <!-- Inclui o Menu Unico Atraves de JavaScript -->
         <div include-html-menu="menu.html"></div>
 
@@ -126,7 +140,12 @@
                         <div class="linha">
                             <a href="https://www.dio.me/" alt="Alga Works">Digital Innovation One</a>
                             <a href="https://institucional.xpi.com.br" alt="XP">XPI</a>
-                            <a href="free/index.html" alt="Cursos Gratuitos Com Certificado">Cursos Gratuitos Com Certificado</a>
+                            <a href="free/index.html" alt="Cursos Gratuitos Com Certificado">Gratuitos Com Certificado</a>
+                        </div>
+                        <div class="linha">
+                            <a href="https://devinhouse.tech/" alt="Alga Works">Dev in House</a>
+                            <a href="https://www.eucapacito.com.br/cursos/" alt="XP">FIAP <br> Eu Capacito</a>
+                            <a href="https://www.datascienceacademy.com.br/cursosgratuitos" alt="Cursos Gratuitos Com Certificado">Data Science</a>
                         </div>
                     </div>
                 </div>
