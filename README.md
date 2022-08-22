@@ -125,7 +125,7 @@ datas dos exercicios do dia.
 
 * Aula 24-08-2022 - quarta-feira
     * Iniciar assunto sobre Orientação a Objetos em JAVA - 02 - ArrayList
-    * Passar exercicios com ArrayList
+    * Passar exercicios com ArrayList - Video FIAP - Collections.
 
 * Aula 25-08-2022 - quinta-feira
     * 03 - Arquivo Texto
