@@ -100,8 +100,6 @@ datas dos exercicios do dia.
 * Aula 22-08-2022 - segunda-feira
     * Slide sobre Strings e Exceções: SLIDE ->Aula 15 - Strings e SLIDE -> Aula 17 - ExcecoesParte2
     * Passar exercicios com Strings e Excecoes;
-    * Manipulacao de arquivos texto
-    * Manipulacao de arquivos xml em JAVA
 
 * Aula 23-08-2022 - terça-feira
    * Projeto Integrador - Aula 02 - Html,CSS e JavaScript
