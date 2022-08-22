@@ -98,7 +98,8 @@ datas dos exercicios do dia.
 
 ## 3ª Semana Agosto
 * Aula 22-08-2022 - segunda-feira
-    * Constantes em JAVA com atributo `final`
+    * Assuntos JAVA pendentes:
+         * Constantes em JAVA com atributo `final`
          * Comandos `break` e `continue` em lacos de repeticao
          * Passar funcoes apos matrizes
          * tipos de funcoes(com retornos(Tipadas) e sem retorno(void))
@@ -108,14 +109,16 @@ datas dos exercicios do dia.
          * Iniciar Classes e atributos apos finalizar as pastas da aula.
 
     * Video sobre Strings - Curso FIAP. Parte 01 e Parte 02.
-    * Slide sobre Strings e Exceções: SLIDE ->Aula 15 - Strings e SLIDE -> Aula 17 - ExcecoesParte2
+    * Slide sobre Strings: SLIDE ->Aula 15 - Strings e
     * Passar exercicios com Strings -
         * Fazer o Jogoda forca, desenhando o enforcado se a pessoa errar todas as vezes;
         * Criar um vetor de palavras contendo a palavra e a dica
         * Mostrar esta dica ao jogador
         * Percorrer a palavra para cada letra digitada e se for digitada errada, mostrar o desenho do enforcado
         * atraves de uma funcao "static void", recebendo como parametro a quantidade de palavra errada.
-    * Passar exercicios com Excecoes;
+
+    * Exceções - SLIDE -> Aula 17 - ExcecoesParte2
+        * Passar exercicios com Excecoes;
 
 * Aula 23-08-2022 - terça-feira
    * Projeto Integrador - Aula 02 - Html,CSS e JavaScript
