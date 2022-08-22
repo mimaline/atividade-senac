@@ -127,7 +127,7 @@ datas dos exercicios do dia.
 * Aula 01-09-2022 - quinta-feira
     * Orientacao Objetos - Herança, Polimorfismo e Interface
     * Passar exercicios com Classes sobre Herança, Polimorfismo e Interface.
-
+    * Padroes de escrita de código
 ## 1ª Semana Setembro
 * Aula 05-09-2022 - segunda-feira
     * Banco de Dados 01 e exercicios iniciais
