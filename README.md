@@ -263,5 +263,10 @@ datas dos exercicios do dia.
     * Projeto Integrador - Apresentacao - 2 ou 3 equipes
     * Ultima aula Programador Sistemas JAVA.
 
+## Classes e os Reinos dos Seres Vivos
+https://pt.slideshare.net/silvannasanches/os-cinco-grandes-reinos-classificao-dos-seres-vivos-40555909
+
+## Reino Animal
+https://www.todamateria.com.br/animais-classificacao/
 
 
