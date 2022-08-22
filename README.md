@@ -97,18 +97,20 @@ datas dos exercicios do dia.
     * Resolver lista de exercicios do tipo Matrizes
 
 ## 3ª Semana Agosto
-* Aula 19-08-2022 - segunda-feira
+* Aula 22-08-2022 - segunda-feira
     * Slide sobre Strings e Exceções: SLIDE ->Aula 15 - Strings e SLIDE -> Aula 17 - ExcecoesParte2
     * Passar exercicios com Strings e Excecoes;
+    * Manipulacao de arquivos texto
+    * Manipulacao de arquivos xml em JAVA
 
-* Aula 20-08-2022 - terça-feira
-   * Projeto Integrador - Aula 02
+* Aula 23-08-2022 - terça-feira
+   * Projeto Integrador - Aula 02 - Html,CSS e JavaScript
 
-* Aula 21-08-2022 - quarta-feira
+* Aula 24-08-2022 - quarta-feira
     * Iniciar assunto sobre Orientação a Objetos em JAVA - 02 - ArrayList
     * Passar exercicios com ArrayList
 
-* Aula 22-08-2022 - quinta-feira
+* Aula 25-08-2022 - quinta-feira
     * 03 - Arquivo Texto
     * Passar exercicios com Arquivo Texto
 
@@ -118,7 +120,7 @@ datas dos exercicios do dia.
     * Passar exercicios com Classes, metodos, etc, criar classes simples com metodos
 
 * Aula 30-08-2022 - terça-feira
-   * Projeto Integrador - Aula 03
+   * Projeto Integrador - Aula 03 - Html,CSS e JavaScript
 
 * Aula 31-08-2022 - quarta-feira
     * Orientacao Objetos - Encapsulamento e Metodos Construtores.
@@ -134,7 +136,7 @@ datas dos exercicios do dia.
     * Passar exercicios iniciais sobre banco de dados
 
 * Aula 06-09-2022 - terça-feira
-   * Projeto Integrador - Aula 04
+   * Projeto Integrador - Aula 04 - Html,CSS e JavaScript
 
 * Aula 07-09-2022 - quarta-feira
     * Banco de Dados 02 e exercicios iniciais
@@ -149,7 +151,7 @@ datas dos exercicios do dia.
     * Atividade em sala junto da explicação, montagem da interface Gráfica.
 
 * Aula 13-09-2022 - terça-feira
-   * Projeto Integrador - Aula 05
+   * Projeto Integrador - Aula 05 - Html,CSS e JavaScript
 
 * Aula 14-09-2022 - quarta-feira
     * Interfaces graficas em JAVA. Sistema simples de vendas com cadastro de pessoas,produtos,vendas e relatorios
@@ -172,7 +174,7 @@ datas dos exercicios do dia.
     * Atividades sobre API REST e html, css e javascript.
 
 * Aula 20-09-2022 - terça-feira
-   * Projeto Integrador - Aula 06
+   * Projeto Integrador - Aula 06 - Html,CSS e JavaScript
 
 * Aula 21-09-2022 - quarta-feira
     * Spring Boot Web API - Consumindo API em JAVA
@@ -194,7 +196,7 @@ datas dos exercicios do dia.
     * Atividades sobre API REST e html, css e javascript.
 
 * Aula 27-09-2022 - terça-feira
-   * Projeto Integrador - Aula 07
+   * Projeto Integrador - Aula 07 - Html,CSS e JavaScript
 
 * Aula 28-09-2022 - quarta-feira
     * Spring Boot Web API - Consumindo API em JAVA
@@ -216,7 +218,7 @@ datas dos exercicios do dia.
     * Atividades sobre API REST e html, css e javascript.
 
 * Aula 04-09-2022 - terça-feira
-   * Projeto Integrador - Aula 08
+   * Projeto Integrador - Aula 08 - Html,CSS e JavaScript
 
 * Aula 05-10-2022 - quarta-feira
     * Spring Boot Web API - Consumindo API em JAVA
@@ -234,7 +236,7 @@ datas dos exercicios do dia.
 * Aula 10-10-2022 - segunda-feira - Aula 09
     * Projeto Integrador - Etapas finais
 
-* Aula 11-10-2022 - terca-feira - Aula 10
+* Aula 11-10-2022 - terca-feira - Aula 10  -
     * Projeto Integrador - Etapas finais
 
 * Aula 12-10-2022 - quarta-feira - Aula 11
